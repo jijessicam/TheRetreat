@@ -23,8 +23,19 @@ ExportedObj/
 *.svd
 *.pdb
 
+
+###################### META STUFF ######################################
+
 # Unity3D generated meta files
 *.pidb.meta
+
+# Ignore: name DOT meta
+*.meta
+
+# Include: name DOT extension DOT meta
+!*.*.meta
+
+###################### END META STUFF ##################################
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
