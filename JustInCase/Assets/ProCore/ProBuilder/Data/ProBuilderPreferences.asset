@@ -17,6 +17,7 @@ MonoBehaviour:
   - pbDisableAutoUV2Generation
   - pbForceConvex
   - pbMeshesAreAssets
+  - pbUVMaterialPreview
   m_Int_keys:
   - pbDefaultEditLevel
   - pb_GIWorkflowMode
@@ -30,15 +31,17 @@ MonoBehaviour:
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
+  - pbBevelAmount
   m_String_keys: []
   m_Color_keys: []
   m_Material_keys:
   - pbDefaultMaterial
-  m_Bool_values: 0001000000
-  m_Int_values: 010000000000000001000000000000000200000000000000000000000200000002000000
+  m_Bool_values: 000100000001
+  m_Int_values: 000000000000000002000000000000000200000000000000000000000200000002000000
   m_Float_values:
   - 0
   - 0
+  - 0.4146313
   m_String_values: []
   m_Color_values: []
   m_Material_values:
