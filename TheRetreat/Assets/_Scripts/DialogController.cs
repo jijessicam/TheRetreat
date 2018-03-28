@@ -10,13 +10,14 @@ public class DialogController : MonoBehaviour
 	public float interactProximity = 5f;
 	public float canvasSpeed = 5f;
 	public float canvasDuration = 2f;
+	public string[] textList;
+
 
 	GameObject player;
 	PlayerController playerController;
 	Vector3 initialScale = new Vector3 (0, 0, 0);
 	Vector3 finalScale = new Vector3 (1, 1, 1);
 	Text currText;
-	string[] textList;
 	int textIndex = 0;
 	bool isLerpScaleReady = true;
 	bool canvasHidden = true;
@@ -26,7 +27,6 @@ public class DialogController : MonoBehaviour
 	void Start ()
 	{
 		dialog_center.transform.localScale = initialScale;
-		textList = dialog_center.GetComponent<DialogText> ().texts;
 		currText = dialog_center.GetComponentInChildren<Text> ();
 
 		player = GameObject.Find ("Player");
