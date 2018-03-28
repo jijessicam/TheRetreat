@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 	public GameObject bottom;
 	public float walkSpeed = 4.0f;
 	public Rigidbody rigidBody;
+	public string talkKey = "e";
+	public string nextDialogKey = "space";
 
 	void Update ()
 	{
