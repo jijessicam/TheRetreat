@@ -1,6 +1,6 @@
-﻿using System.Collections;using System.Collections.Generic;using UnityEngine;public class PlayerScript : MonoBehaviour {    private Rigidbody rb;    public float movementSpeed = 5.0f;    public float turningSpeed = 100.0f;    private void Start()
+﻿using System.Collections;using System.Collections.Generic;using UnityEngine;public class PlayerScript : MonoBehaviour {//    private Rigidbody rb;    public float movementSpeed = 5.0f;    public float turningSpeed = 100.0f;    private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+//        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
