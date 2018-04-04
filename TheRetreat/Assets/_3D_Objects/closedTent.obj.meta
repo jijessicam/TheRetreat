@@ -1,18 +1,21 @@
 fileFormatVersion: 2
-guid: 13152ccadb7ae42c59b857d8bd96e4e4
-timeCreated: 1522812188
+guid: c45fb39139cf54c978d81a4a57917426
+timeCreated: 1522871127
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: default
     400000: //RootNode
-    2100000: Material_002
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    400002: default
+    2100000: Material
+    2100002: Material.001
+    2100004: None
+    2100006: Material.003
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
