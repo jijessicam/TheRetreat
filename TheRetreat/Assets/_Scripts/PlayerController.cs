@@ -20,13 +20,16 @@ public class PlayerController : MonoBehaviour
 
 		RaycastHit hit;
 		if (Physics.Raycast (bottom.transform.position, -Vector3.up, out hit)) {
-			if (hit.collider.gameObject.name == "Terrain") {
+
+			if (hit.collider.gameObject.name == ("Terrain")) {
+
 				float distanceToGround = hit.distance;
 				transform.Translate (new Vector3 (0, -distanceToGround * .5f, z));
 				return;
 			}
 		} else if (Physics.Raycast (bottom.transform.position, Vector3.up, out hit)) {
-			if (hit.collider.gameObject.name == "Terrain") {
+
+			if (hit.collider.gameObject.name == ("Terrain")) {
 				float distanceToGround = hit.distance;
 				transform.Translate (new Vector3 (0, distanceToGround * .5f, z));
 				return;

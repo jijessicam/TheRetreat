@@ -77,6 +77,26 @@ MonoBehaviour:
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
     alternatePortraits: []
+  - id: 3
+    fields:
+    - title: Name
+      value: New Actor 3
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
   items:
   - id: 1
     fields:
@@ -742,8 +762,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Lucky for you, I AM the supervisor. Now kindly remove yourself from
-          the premises or I will remove you myself. '
+        value: Lucky for you, I AM the supervisor. Now kindly tell me what your business
+          is here, or come back later when you're feel like speaking like an adult.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -773,7 +793,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 7
         destinationConversationID: 1
-        destinationDialogueID: 8
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -816,7 +836,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '*You are forced to leave the premeses* '
+        value: "I'm sorry, I'll cooperate.\n\n*You fish a paper from your bag and
+          hand it to the officer*\n\nI\u2019m Lorena Zamora, a reporter. I\u2019m
+          here to cover the relocation of the RETREAT."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -863,8 +885,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 385.52847
-        y: 320
+        x: 1047.1993
+        y: 389.4883
         width: 160
         height: 30
     - id: 9
@@ -1394,8 +1416,81 @@ MonoBehaviour:
         y: 722.2866
         width: 160
         height: 30
-    canvasScrollPosition: {x: 48.711594, y: 51.850857}
-    canvasZoom: 0.62150186
+    - id: 16
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: THIS IS A 3RD PERSON LORENA
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 16
+        destinationConversationID: 1
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 391.0851
+        y: 354.44318
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 125.57196, y: 39.600548}
+    canvasZoom: 0.4945008
   syncInfo:
     syncActors: 0
     syncItems: 0
