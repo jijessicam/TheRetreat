@@ -4907,24 +4907,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1914816272221924, guid: e449de712b21242b081520feaa2b2048, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 23772761673408922, guid: e449de712b21242b081520feaa2b2048,
-        type: 2}
-      propertyPath: m_ImportantGI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037069889750020, guid: e449de712b21242b081520feaa2b2048, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -53.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 33768651314831338, guid: e449de712b21242b081520feaa2b2048,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 39bc44afd9e7c4a7c87ac3e222eff2da, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e449de712b21242b081520feaa2b2048, type: 2}
   m_IsPrefabParent: 0
@@ -12187,7 +12169,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5184c24a333b28a41976dbc07c8a0ce7, type: 2}
       propertyPath: m_Name
-      value: tent_01a (15)
+      value: LorenasTent
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5184c24a333b28a41976dbc07c8a0ce7, type: 2}
       propertyPath: m_LocalScale.x
@@ -31090,13 +31072,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1217464980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.95, y: 1, z: -12.6}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: -0, y: -0.9999751, z: -0, w: 0.007070571}
+  m_LocalPosition: {x: 0.29157495, y: 0.6666667, z: 1.2698735}
+  m_LocalScale: {x: 2.1333325, y: 2.2, z: 4.766665}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 423612046}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!1 &1220630718
 GameObject:
   m_ObjectHideFlags: 0
