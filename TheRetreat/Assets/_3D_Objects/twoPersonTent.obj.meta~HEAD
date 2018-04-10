@@ -1,23 +1,16 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: c45fb39139cf54c978d81a4a57917426
-timeCreated: 1522871127
-=======
-guid: cbeb67efede5a48e88f72e2e11e126aa
-timeCreated: 1522871532
->>>>>>> 3a7f9a821d456deffdf9a8e09840be1f2df698a8
+guid: 59fc4babb7456497788ad714fcf2ef2e
+timeCreated: 1522867856
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: default
-    400000: //RootNode
-    400002: default
-    2100000: Material
-    2100002: Material.001
-    2100004: None
-    2100006: Material.003
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: Material.001
+    2100002: Material.002
     2300000: default
     3300000: default
     4300000: default
