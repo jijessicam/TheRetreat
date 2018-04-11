@@ -9821,19 +9821,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.2118137
       objectReference: {fileID: 0}
     - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.015969051
+      value: 0.007746383
       objectReference: {fileID: 0}
     - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9998725
+      value: 0.9772189
       objectReference: {fileID: 0}
     - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.83
+      value: 0.60400003
       objectReference: {fileID: 0}
     - target: {fileID: 4260381995399074, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalRotation.y
@@ -9930,6 +9930,34 @@ Prefab:
     - target: {fileID: 4005037150668792, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.010871384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.029315015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.05038003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.06351235
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277990683564300, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 24.452002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335948756596220, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
+      propertyPath: m_Name
+      value: LorenasTent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b87c0f0e9d12f4f9ab28420d728a93c8, type: 2}
@@ -11019,6 +11047,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 358314930}
   m_Mesh: {fileID: 4300000, guid: 70c6c7135b33043f981df23092c40cd7, type: 2}
+--- !u!1 &359930841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 359930842}
+  - component: {fileID: 359930844}
+  - component: {fileID: 359930843}
+  m_Layer: 0
+  m_Name: QuestCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359930842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359930841}
+  m_LocalRotation: {x: 0, y: 0.20517938, z: 0, w: 0.9787244}
+  m_LocalPosition: {x: 1.39, y: 0, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1089179315}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 23.68, z: 0}
+--- !u!114 &359930843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359930841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1341398357, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  once: 0
+  trigger: 8
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: Find Your Tent
+  setQuestState: 1
+  questState: 4
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  luaCode: 
+  alertMessage: This is your tent.
+  localizedTextTable: {fileID: 0}
+  sendMessages: []
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: 785caf4f7e0f74231bbb4d1290063b9c, type: 2}
+--- !u!65 &359930844
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359930841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &360665599
 GameObject:
   m_ObjectHideFlags: 0
@@ -31941,6 +32043,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1088206347}
   m_Mesh: {fileID: 4300000, guid: a968ccbf82fa34e619d149278137cd43, type: 2}
+--- !u!4 &1089179315 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4087833979555342, guid: b87c0f0e9d12f4f9ab28420d728a93c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 320497354}
 --- !u!1 &1089917048
 GameObject:
   m_ObjectHideFlags: 0
