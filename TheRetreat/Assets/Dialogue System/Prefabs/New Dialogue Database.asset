@@ -144,6 +144,24 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+  - id: 2
+    fields:
+    - title: Name
+      value: New Item 2
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Is Item
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations: []
   variables:
   - id: 1
@@ -1489,8 +1507,8 @@ MonoBehaviour:
         y: 354.44318
         width: 160
         height: 30
-    canvasScrollPosition: {x: 125.57196, y: 39.600548}
-    canvasZoom: 0.4945008
+    canvasScrollPosition: {x: 27.835445, y: 47.065254}
+    canvasZoom: 0.9459967
   syncInfo:
     syncActors: 0
     syncItems: 0
