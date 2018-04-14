@@ -1,14 +1,24 @@
 fileFormatVersion: 2
-guid: 3f778a2b4e43f49448dd79f833d64986
+guid: 1a9608ef0993427488233be2f0659216
+timeCreated: 1523730751
+licenseType: Free
 TrueTypeFontImporter:
-  serializedVersion: 2
-  fontSize: 100
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
+  fontName: Arial Rounded MT Bold
+  fontNames:
+  - Arial Rounded MT Bold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5aa6441bc5addd9498947519aa522112, type: 3}
   customCharacters: 
   fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
