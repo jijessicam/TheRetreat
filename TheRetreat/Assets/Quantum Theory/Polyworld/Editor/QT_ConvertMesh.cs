@@ -1193,7 +1193,7 @@ public class QT_ConvertMesh : EditorWindow
         //if there is no material in the folder, make a new one.
         if(newMat==null)
         {           
-			newMat = new Material(Shader.Find("QuantumTheory/VertexColors/Unity5/Diffuse"));
+			newMat = new Material(Shader.Find("Quantum Theory/PolyWorld/PolyWorld Surface"));
             newMat.name = matName;
          AssetDatabase.CreateAsset(newMat, folderPath + "/" + newMat.name + ".asset");
         }
