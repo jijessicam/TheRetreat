@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CompassHandler : MonoBehaviour
 {
-	public float numberOfPixelsNorthToNorth;
+	public float numberOfPixelsNorthToNorth = 590f;
 	public GameObject target;
 	Vector3 startPosition;
 	float rationAngleToPixel;
