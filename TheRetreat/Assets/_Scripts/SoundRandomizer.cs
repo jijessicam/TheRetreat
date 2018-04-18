@@ -30,7 +30,7 @@ public class SoundRandomizer : MonoBehaviour {
 		timeToWaitForSoundToFinish -= Time.deltaTime;
 
 		if (timePassed > nextSoundTime && timeToWaitForSoundToFinish < 0f) {
-			audioSource.clip = (AudioClip) soundsFolder[Mathf.RoundToInt(Random.Range(0f, (float)soundsFolder.Length) - 1f)] as AudioClip;
+			audioSource.clip = (AudioClip) soundsFolder[Mathf.RoundToInt(Random.Range(0f, (float)(soundsFolder.Length) - 1))] as AudioClip;
 			timeToWaitForSoundToFinish = audioSource.clip.length;
 
 			if (randomizePanning) {
