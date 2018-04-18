@@ -14,6 +14,7 @@ public class RandomMovement : MonoBehaviour {
 	private Vector2 nextRandomPoint;
 	private Vector3 waypoint;
 	private Vector3 lastPos;
+	private float stationaryTimer = 0f;
 
 	void Start() {
 		getNextPos ();
@@ -22,11 +23,7 @@ public class RandomMovement : MonoBehaviour {
 	void Update ()
 	{
 
-
-
 		// if rotation not at waypoint, lerp rotation to the waypoint
-
-
 
 		float step = rotateSpeed * Time.deltaTime;
 		Vector3 newDir = Vector3.RotateTowards(transform.forward, new Vector3(waypoint.x, 0f, waypoint.z), step, 1f);
@@ -44,7 +41,8 @@ public class RandomMovement : MonoBehaviour {
 
 
 		// if position not at waypoint, lerp movement to the waypoint
-		if (transform.position.x != waypoint.x || transform.position.z != waypoint.z) {
+		lastPos = transform.position;
+		if (!Mathf.Approximately (transform.position.x, waypoint.x) && !Mathf.Approximately (transform.position.z, waypoint.z)) {
 			step = walkSpeed * Time.deltaTime;
 			Vector3 nextPos = Vector3.MoveTowards (transform.position, waypoint, step);
 
@@ -68,8 +66,11 @@ public class RandomMovement : MonoBehaviour {
 					return;
 				}
 			}
-			lastPos = transform.position;
 			transform.position = (new Vector3 (nextPos.x, transform.position.y, nextPos.z));
+
+//			Debug.Log ("LastPos: " + lastPos);
+//			Debug.Log ("NewPos: " + transform.position);
+
 			if (transform.position == lastPos) {
 				getNextPos ();
 			}

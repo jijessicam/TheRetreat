@@ -19,7 +19,6 @@ public class CompassQuestMarkerHandler : MonoBehaviour {
 
 			GameObject collider = GameObject.Find ("FindYourTentQuestCollider");
 
-
 			GameObject questMarker = Instantiate (questMarkerPrefab, this.transform);
 			questMarker.name = "QM_FindYourTentQuestCollider";
 		}
