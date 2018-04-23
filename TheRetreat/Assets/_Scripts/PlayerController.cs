@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
 
 		transform.Rotate (0, x, 0);
 
+		// if there is a collider, just return
+//		if (this.gameObject
+
 
 		RaycastHit hit;
 		if (Physics.Raycast (bottom.transform.position, -Vector3.up, out hit)) {
@@ -37,12 +40,5 @@ public class PlayerController : MonoBehaviour
 		}
 
 		transform.Translate (0, 0, z);
-
-//
-//		transform.Translate(new Vector3(transform.position.x, transform.position.y + distanceToGround, transform.position.z));
-
-//		rigidBody.AddForce (Vector3.forward * walkSpeed);
-
-
 	}
 }
