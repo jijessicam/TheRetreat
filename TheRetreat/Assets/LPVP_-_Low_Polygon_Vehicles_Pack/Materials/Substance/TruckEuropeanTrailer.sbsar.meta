@@ -25,9 +25,9 @@ SubstanceImporter:
         stringvalue: 
     - name: CarColor
       value:
-        scalar[0]: 0.0431373
-        scalar[1]: 0.356863
-        scalar[2]: 0.619608
+        scalar[0]: 0.02238321
+        scalar[1]: 0.2863125
+        scalar[2]: 0.50735295
         scalar[3]: 0
         texture: {instanceID: 0}
         stringvalue: 
