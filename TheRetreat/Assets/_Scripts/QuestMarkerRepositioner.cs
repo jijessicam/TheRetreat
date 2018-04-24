@@ -13,7 +13,7 @@ public class QuestMarkerRepositioner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find ("player");
+		player = GameObject.Find ("Player");
 
 		// get the name of the thing to point to from the name of the marker (this is the convention we are using rn)
 		string colliderString = this.transform.name;
