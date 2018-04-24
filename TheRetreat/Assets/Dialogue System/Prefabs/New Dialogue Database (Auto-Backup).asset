@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1097633651, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
-  m_Name: OUR_database
+  m_Name: New Dialogue Database (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 
   author: 
@@ -38,7 +38,7 @@ MonoBehaviour:
     - title: Name
       value: (Player) Lorena
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[]'
       type: 3
@@ -46,7 +46,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: True
       type: 2
@@ -54,7 +54,7 @@ MonoBehaviour:
     - title: Display Name
       value: Lorena
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     portrait: {fileID: 0}
     alternatePortraits: []
   - id: 2
@@ -133,186 +133,6 @@ MonoBehaviour:
     fields:
     - title: Name
       value: Lay-La
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 6
-    fields:
-    - title: Name
-      value: Josh
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 7
-    fields:
-    - title: Name
-      value: Mitch
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 8
-    fields:
-    - title: Name
-      value: Julia
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 9
-    fields:
-    - title: Name
-      value: Samantha
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 10
-    fields:
-    - title: Name
-      value: Mark
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 11
-    fields:
-    - title: Name
-      value: Louis
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 12
-    fields:
-    - title: Name
-      value: Yasmin
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 13
-    fields:
-    - title: Name
-      value: Jason
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    alternatePortraits: []
-  - id: 14
-    fields:
-    - title: Name
-      value: Steven
       type: 0
       typeString: 
     - title: Pictures
@@ -3364,11 +3184,11 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Actor
-      value: 6
+      value: 1
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 1
+      value: 2
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -3405,11 +3225,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 6
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3478,11 +3298,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 6
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3662,7 +3482,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 7
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3718,7 +3538,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 69
+        y: 70
         width: 160
         height: 30
     - id: 2
@@ -3736,7 +3556,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 7
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3810,11 +3630,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 7
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3993,7 +3813,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 8
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4066,11 +3886,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 8
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4140,7 +3960,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 8
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4323,7 +4143,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 9
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4580,11 +4400,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4764,7 +4584,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 10
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4837,11 +4657,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 10
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5020,7 +4840,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 11
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5093,11 +4913,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 11
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5207,7 +5027,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 12
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5239,7 +5059,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 11
@@ -5258,7 +5078,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 21
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -5276,7 +5096,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 12
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5332,7 +5152,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 71
+        y: 70
         width: 160
         height: 30
     - id: 2
@@ -5350,11 +5170,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 12
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5405,7 +5225,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 119
+        y: 120
         width: 160
         height: 30
     - id: 3
@@ -5423,7 +5243,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 12
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5496,11 +5316,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 12
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5569,7 +5389,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 12
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5752,7 +5572,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 13
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5826,11 +5646,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 13
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5974,226 +5794,6 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: 
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 13
-        originDialogueID: 0
-        destinationConversationID: 13
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 20
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 14
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "You\u2019re one of them, aren\u2019t ya?"
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 13
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 13
-        originDialogueID: 1
-        destinationConversationID: 13
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 70
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 14
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "I saw you talking with the officers at the beginning, what\u2019re
-          you? Some RETREAT officer from washington?"
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 13
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 13
-        originDialogueID: 2
-        destinationConversationID: 13
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 120
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 14
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Get out of my face.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 13
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
@@ -6205,7 +5805,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 170
+        y: 20
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
