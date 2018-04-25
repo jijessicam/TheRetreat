@@ -4884,6 +4884,7 @@ GameObject:
   - component: {fileID: 4074163403543566}
   - component: {fileID: 33945269774658726}
   - component: {fileID: 23252892376466898}
+  - component: {fileID: 65213438700321422}
   m_Layer: 0
   m_Name: SUB_CarB
   m_TagString: Untagged
@@ -6186,7 +6187,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317522240498796}
   m_LocalRotation: {x: -0, y: 0.5780371, z: -0, w: 0.8160105}
-  m_LocalPosition: {x: 3.16, y: -3.27, z: 61.71}
+  m_LocalPosition: {x: 3.16, y: -4.33, z: 61.71}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 4018430048006314}
@@ -20922,6 +20923,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1438772853676278}
   m_Mesh: {fileID: 4300000, guid: f0ea31e8622fcc3438d58240f68c0d16, type: 3}
+--- !u!65 &65213438700321422
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984135297988170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.113443, y: 1.4298834, z: 4.026567}
+  m_Center: {x: 0.0000076293945, y: 0.92073315, z: 0.06191969}
 --- !u!95 &95254779640769082
 Animator:
   serializedVersion: 3

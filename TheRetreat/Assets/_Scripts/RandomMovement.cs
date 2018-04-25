@@ -76,7 +76,6 @@ public class RandomMovement : MonoBehaviour {
 			}
 		} else {
 			getNextPos ();
-			Debug.Log ("GETTING NEXT POSITION");
 		}
 	}
 
