@@ -347,10 +347,6 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    - title: Display Name
-      value: 
-      type: 0
-      typeString: 
     portrait: {fileID: 0}
     alternatePortraits: []
   - id: 16
@@ -828,10 +824,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Excuse me ma''am, but no one is going anywhere until I know the nature
+        value: Excuse me ma'am, but no one is going anywhere until I know the nature
           of your visit.
-
-'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1099,8 +1093,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1234.1603
+        x: 682.3624
+        y: 1244.6543
         width: 160
         height: 30
     - id: 9
@@ -2066,8 +2060,8 @@ MonoBehaviour:
         y: 1484.1603
         width: 160
         height: 30
-    canvasScrollPosition: {x: 566.7747, y: 688.5115}
-    canvasZoom: 0.72203803
+    canvasScrollPosition: {x: 537.1084, y: 830.14746}
+    canvasZoom: 0.66703737
   - id: 2
     fields:
     - title: Title
@@ -3207,8 +3201,8 @@ MonoBehaviour:
         y: 641.06976
         width: 160
         height: 30
-    canvasScrollPosition: {x: 537.4699, y: 526.69824}
-    canvasZoom: 1.3360758
+    canvasScrollPosition: {x: 376.55353, y: 444.9036}
+    canvasZoom: 0.7710754
   - id: 3
     fields:
     - title: Title
