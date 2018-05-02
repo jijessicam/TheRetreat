@@ -13,7 +13,10 @@ Shader "Quantum Theory/PolyWorld/PolyWorld Surface"
 
 	SubShader
 	{
+
 		Tags{ "RenderType" = "Opaque"  "Queue" = "Geometry+0" "IsEmissive" = "true"  }
+
+
 		Cull Back
 		CGPROGRAM
 		#pragma target 2.0
@@ -38,6 +41,8 @@ Shader "Quantum Theory/PolyWorld/PolyWorld Surface"
 		}
 
 		ENDCG
+
+
 	}
 	Fallback "Diffuse"
 }

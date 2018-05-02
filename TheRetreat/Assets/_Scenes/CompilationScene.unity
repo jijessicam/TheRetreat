@@ -40926,22 +40926,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 4892246120312158, guid: b0f0df9ad920c3640a41d4eb2e8e2f72, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892246120312158, guid: b0f0df9ad920c3640a41d4eb2e8e2f72, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892246120312158, guid: b0f0df9ad920c3640a41d4eb2e8e2f72, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -87.803
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892246120312158, guid: b0f0df9ad920c3640a41d4eb2e8e2f72, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f0df9ad920c3640a41d4eb2e8e2f72, type: 2}
   m_IsPrefabParent: 0
