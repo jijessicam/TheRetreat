@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73409283, g: 0.68546534, b: 0.6953522, a: 1}
+  m_IndirectSpecularColor: {r: 0.73409265, g: 0.68546486, b: 0.6953518, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -23291,7 +23291,7 @@ Prefab:
     - target: {fileID: 224674971407564590, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.00000011920929
       objectReference: {fileID: 0}
     - target: {fileID: 224294529068145046, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
@@ -23386,7 +23386,7 @@ Prefab:
     - target: {fileID: 224584251641975080, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 225020549924008376, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
@@ -52391,6 +52391,56 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114781085024450126, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: useKey
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: enableTouch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: useButton
+      value: fire2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: touchArea.origin
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: touchArea.width.scale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: touchArea.width.value
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: touchArea.height.value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: useDefaultGUI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926964682100686, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666114204567260, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
         type: 2}
       propertyPath: m_Enabled
       value: 0
