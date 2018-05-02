@@ -12,13 +12,14 @@ public class CompassQuestMarkerHandler : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		QuestLog.AddQuestStateObserver ("Find Your Tent", LuaWatchFrequency.EveryUpdate, OnQuestStateChanged);
-		activeMarkers = new Hashtable();
+		QuestLog.AddQuestStateObserver ("Talk to Demitri", LuaWatchFrequency.EveryUpdate, OnQuestStateChanged);
+		activeMarkers = new Hashtable ();
 	}
 
 	void OnQuestStateChanged (string title, QuestState newState) {
 
 		// make a quest marker on the tent
-		if (newState == QuestState.Active) {
+		if (newState == QuestState.Active && title == "Find Your Tent") {
 
 			GameObject collider = GameObject.Find ("FindYourTentQuestCollider");
 
@@ -27,12 +28,21 @@ public class CompassQuestMarkerHandler : MonoBehaviour {
 			questMarker.name = "QM_FindYourTentQuestCollider";
 
 			activeMarkers.Add (title, questMarker);
+		} else if (newState == QuestState.Active && title == "Talk to Demitri") {
+			GameObject demitri = GameObject.Find ("Demitri");
+
+			GameObject questMarker = Instantiate (questMarkerPrefab, this.transform) as GameObject;
+
+			questMarker.name = "QM_Demitri";
+
+			activeMarkers.Add (title, questMarker);
+
 		} else {
 			// inactive quests don't get marker
 			GameObject marker = activeMarkers[title] as GameObject;
 			if (marker != null) {
-				activeMarkers.Remove(title);
-				Destroy(marker);
+				activeMarkers.Remove (title);
+				Destroy (marker);
 			}
 		}
 	}
