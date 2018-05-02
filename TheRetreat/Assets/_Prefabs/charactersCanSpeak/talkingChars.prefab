@@ -24731,6 +24731,8 @@ GameObject:
   - component: {fileID: 114324350206142126}
   - component: {fileID: 114655996621248652}
   - component: {fileID: 114095898252180080}
+  - component: {fileID: 114926964682100686}
+  - component: {fileID: 114275977304617920}
   m_Layer: 0
   m_Name: Rosa_Bear_RETREAT_Officer
   m_TagString: Untagged
@@ -48619,13 +48621,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385569765551372}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.6234637, y: 0.3336063, z: 0.3336063, w: 0.6234635}
+  m_LocalPosition: {x: 38.5, y: 0, z: 25.5}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_Children: []
   m_Father: {fileID: 4708646706861472}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 56.301003}
 --- !u!4 &4552070071130656
 Transform:
   m_ObjectHideFlags: 1
@@ -59225,13 +59227,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1173106639561926}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.70702803, y: -0.010557681, z: -0.010557681, w: 0.707028}
+  m_LocalPosition: {x: -0.00009855359, y: 0, z: -0.0001624863}
   m_LocalScale: {x: 100, y: 100.00001, z: 100.00001}
   m_Children: []
   m_Father: {fileID: 4998453619366242}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -1.7110001}
 --- !u!4 &4901729510678956
 Transform:
   m_ObjectHideFlags: 1
@@ -62585,7 +62587,7 @@ Animator:
   m_GameObject: {fileID: 1734111623793774}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2fd01c62fc91bcf41a41f43b2bfb79a2, type: 3}
-  m_Controller: {fileID: 9100000, guid: 24abac5d3ef57db43bf0a3bb59946bb8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41ed9029d03b11a498824f6780b7d413, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -62908,7 +62910,7 @@ Animator:
   m_GameObject: {fileID: 1844435029974816}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1052ab50d9f922b418e4b35bfc8eb89e, type: 3}
-  m_Controller: {fileID: 9100000, guid: e8961a71fb512ed4abfd4ea1e8cd9540, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41ed9029d03b11a498824f6780b7d413, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -63383,6 +63385,42 @@ MonoBehaviour:
   overrideName: Jamie
   internalName: 
   useLocalizedNameInDatabase: 0
+--- !u!114 &114275977304617920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763259525277404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1195045865, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 2
+  once: 1
+  selectedDatabase: {fileID: 0}
+  onStart: []
+  waitOneFrameOnStart: 1
+  onEnd:
+  - condition:
+      luaConditions: []
+      questConditions: []
+      acceptedTags: []
+      acceptedGameObjects: []
+      luaWizardIndex: 0
+      lastEvaluationValue: 0
+    target: {fileID: 114926964682100686}
+    state: 0
+  - condition:
+      luaConditions: []
+      questConditions: []
+      acceptedTags: []
+      acceptedGameObjects: []
+      luaWizardIndex: 0
+      lastEvaluationValue: 0
+    target: {fileID: 114324350206142126}
+    state: 1
+  waitOneFrameOnEnd: 0
 --- !u!114 &114291022635475048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64302,6 +64340,34 @@ MonoBehaviour:
   overrideName: ???
   internalName: 
   useLocalizedNameInDatabase: 0
+--- !u!114 &114926964682100686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763259525277404}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  once: 0
+  conversation: Filler 1
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  skipIfNoValidEntries: 0
+  exclusive: 0
+  conversant: {fileID: 4998453619366242}
+  useConversationTitlePicker: 1
+  selectedDatabase: {fileID: 0}
+  actor: {fileID: 4708646706861472}
+  trigger: 32
+  stopConversationOnTriggerExit: 0
 --- !u!114 &114937756541023194
 MonoBehaviour:
   m_ObjectHideFlags: 1
