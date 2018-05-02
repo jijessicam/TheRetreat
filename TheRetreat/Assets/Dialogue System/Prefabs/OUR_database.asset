@@ -4351,7 +4351,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Actor
-      value: 6
+      value: -1
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
@@ -4392,7 +4392,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 6
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4469,7 +4469,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 6
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
