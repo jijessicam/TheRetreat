@@ -6669,7 +6669,7 @@ MonoBehaviour:
   m_Script: {fileID: -1341398357, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 0
+  once: 1
   trigger: 8
   condition:
     luaConditions: []
