@@ -149,9 +149,10 @@ namespace PixelCrushers.DialogueSystem {
         /// <value>The GUI style.</value>
         public GUIStyle GuiStyle { get { SetGuiStyle (); return guiStyle; } }
 
-        /* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
+        /* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~**~*~*~*~*~*~*~*~*~*~*~**~*~*~*~*~~*~ */
         private GameObject indicatorAboveHead;
-        /* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
+
+        /* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~**~**~*~*~*~***~*~*~*~*~*~***~*~**~*~*~ */
 
         /// <summary>
         /// Keeps track of which usable objects' triggers the selector is currently inside.
@@ -290,6 +291,13 @@ namespace PixelCrushers.DialogueSystem {
         }
 
         private void CheckTriggerEnter (GameObject other) {
+            // cast a ray to check if the player is facing the usable object
+			Ray ray = new Ray();
+			ray.origin = this.gameObject.transform.position;
+			ray.direction = this.gameObject.transform.forward;
+			Debug.DrawRay (ray.origin, ray.direction, Color.red);
+			Debug.Log ("CALLING");
+
             Usable usable = other.GetComponent<Usable> ();
             if (usable != null) {
                 SetCurrentUsable (usable);
