@@ -3,387 +3,431 @@ using PixelCrushers.DialogueSystem.UnityGUI;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PixelCrushers.DialogueSystem {
+namespace PixelCrushers.DialogueSystem
+{
 
-    /// <summary>
-    /// This component implements a proximity-based selector that allows the player to move into
-    /// range and use a usable object. 
-    /// 
-    /// To mark an object usable, add the Usable component and a collider to it. The object's
-    /// layer should be in the layer mask specified on the Selector component.
-    /// 
-    /// The proximity selector tracks the most recent usable object whose trigger the player has
-    /// entered. It displays a targeting reticle and information about the object. If the target
-    /// is in range, the inRange reticle texture is displayed; otherwise the outOfRange texture is
-    /// displayed.
-    /// 
-    /// If the player presses the use button (which defaults to spacebar and Fire2), the targeted
-    /// object will receive an "OnUse" message.
-    /// 
-    /// You can hook into SelectedUsableObject and DeselectedUsableObject to get notifications
-    /// when the current target has changed.
-    /// </summary>
-#if UNITY_5_1 || UNITY_5_2 || UNITY_5_3_OR_NEWER
+	/// <summary>
+	/// This component implements a proximity-based selector that allows the player to move into
+	/// range and use a usable object. 
+	/// 
+	/// To mark an object usable, add the Usable component and a collider to it. The object's
+	/// layer should be in the layer mask specified on the Selector component.
+	/// 
+	/// The proximity selector tracks the most recent usable object whose trigger the player has
+	/// entered. It displays a targeting reticle and information about the object. If the target
+	/// is in range, the inRange reticle texture is displayed; otherwise the outOfRange texture is
+	/// displayed.
+	/// 
+	/// If the player presses the use button (which defaults to spacebar and Fire2), the targeted
+	/// object will receive an "OnUse" message.
+	/// 
+	/// You can hook into SelectedUsableObject and DeselectedUsableObject to get notifications
+	/// when the current target has changed.
+	/// </summary>
+	#if UNITY_5_1 || UNITY_5_2 || UNITY_5_3_OR_NEWER
     [HelpURL ("http://pixelcrushers.com/dialogue_system/manual/html/proximity_selector.html")]
 #endif
-    [AddComponentMenu ("Dialogue System/Actor/Player/Proximity Selector")]
-    public class ProximitySelector : MonoBehaviour {
+	[AddComponentMenu ("Dialogue System/Actor/Player/Proximity Selector")]
+	public class ProximitySelector : MonoBehaviour
+	{
 
-        /// <summary>
-        /// This class defines the textures and size of the targeting reticle.
-        /// </summary>
-        [System.Serializable]
-        public class Reticle {
-            public Texture2D inRange;
-            public Texture2D outOfRange;
-            public float width = 64f;
-            public float height = 64f;
-        }
+		/// <summary>
+		/// This class defines the textures and size of the targeting reticle.
+		/// </summary>
+		[System.Serializable]
+		public class Reticle
+		{
+			public Texture2D inRange;
+			public Texture2D outOfRange;
+			public float width = 64f;
+			public float height = 64f;
+		}
 
-        /// <summary>
-        /// If <c>true</c>, uses a default OnGUI to display a selection message and
-        /// targeting reticle.
-        /// </summary>
-        [Tooltip ("Use a default OnGUI to display selection message and targeting reticle.")]
-        public bool useDefaultGUI = true;
+		/// <summary>
+		/// If <c>true</c>, uses a default OnGUI to display a selection message and
+		/// targeting reticle.
+		/// </summary>
+		[Tooltip ("Use a default OnGUI to display selection message and targeting reticle.")]
+		public bool useDefaultGUI = true;
 
-        /// <summary>
-        /// The GUI skin to use for the target's information (name and use message).
-        /// </summary>
-        [Tooltip ("GUI skin to use for the target's information (name and use message).")]
-        public GUISkin guiSkin;
+		/// <summary>
+		/// The GUI skin to use for the target's information (name and use message).
+		/// </summary>
+		[Tooltip ("GUI skin to use for the target's information (name and use message).")]
+		public GUISkin guiSkin;
 
-        /// <summary>
-        /// The name of the GUI style in the skin.
-        /// </summary>
-        [Tooltip ("Name of the GUI style in the skin.")]
-        public string guiStyleName = "label";
+		/// <summary>
+		/// The name of the GUI style in the skin.
+		/// </summary>
+		[Tooltip ("Name of the GUI style in the skin.")]
+		public string guiStyleName = "label";
 
-        /// <summary>
-        /// The text alignment.
-        /// </summary>
-        public TextAnchor alignment = TextAnchor.UpperCenter;
+		/// <summary>
+		/// The text alignment.
+		/// </summary>
+		public TextAnchor alignment = TextAnchor.UpperCenter;
 
-        /// <summary>
-        /// The color of the information labels when the target is in range.
-        /// </summary>
-        [Tooltip ("Color of the information labels when the target is in range.")]
-        public Color color = Color.yellow;
+		/// <summary>
+		/// The color of the information labels when the target is in range.
+		/// </summary>
+		[Tooltip ("Color of the information labels when the target is in range.")]
+		public Color color = Color.yellow;
 
-        /// <summary>
-        /// The text style for the text.
-        /// </summary>
-        public TextStyle textStyle = TextStyle.Shadow;
+		/// <summary>
+		/// The text style for the text.
+		/// </summary>
+		public TextStyle textStyle = TextStyle.Shadow;
 
-        /// <summary>
-        /// The color of the text style's outline or shadow.
-        /// </summary>
-        [Tooltip ("Color of the text style's outline or shadow.")]
-        public Color textStyleColor = Color.black;
+		/// <summary>
+		/// The color of the text style's outline or shadow.
+		/// </summary>
+		[Tooltip ("Color of the text style's outline or shadow.")]
+		public Color textStyleColor = Color.black;
 
-        /// <summary>
-        /// The default use message. This can be overridden in the target's Usable component.
-        /// </summary>
-        [Tooltip ("Default use message. This can be overridden in the target's Usable component.")]
-        public string defaultUseMessage = "(spacebar to interact)";
+		/// <summary>
+		/// The default use message. This can be overridden in the target's Usable component.
+		/// </summary>
+		[Tooltip ("Default use message. This can be overridden in the target's Usable component.")]
+		public string defaultUseMessage = "(spacebar to interact)";
 
-        /// <summary>
-        /// The key that sends an OnUse message.
-        /// </summary>
-        [Tooltip ("Key that sends an OnUse message.")]
-        public KeyCode useKey = KeyCode.Space;
+		/// <summary>
+		/// The key that sends an OnUse message.
+		/// </summary>
+		[Tooltip ("Key that sends an OnUse message.")]
+		public KeyCode useKey = KeyCode.Space;
 
-        /// <summary>
-        /// The button that sends an OnUse message.
-        /// </summary>
-        [Tooltip ("Input button that sends an OnUse message.")]
-        public string useButton = "Fire2";
+		/// <summary>
+		/// The button that sends an OnUse message.
+		/// </summary>
+		[Tooltip ("Input button that sends an OnUse message.")]
+		public string useButton = "Fire2";
 
-        /// <summary>
-        /// Tick to enable touch triggering.
-        /// </summary>
-        [Tooltip ("Enable touch triggering.")]
-        public bool enableTouch = false;
+		/// <summary>
+		/// Tick to enable touch triggering.
+		/// </summary>
+		[Tooltip ("Enable touch triggering.")]
+		public bool enableTouch = false;
 
-        /// <summary>
-        /// If touch triggering is enabled and there's a touch in this area,
-        /// the selector triggers.
-        /// </summary>
-        public ScaledRect touchArea = new ScaledRect (ScaledRect.empty);
+		/// <summary>
+		/// If touch triggering is enabled and there's a touch in this area,
+		/// the selector triggers.
+		/// </summary>
+		public ScaledRect touchArea = new ScaledRect (ScaledRect.empty);
 
-        /// <summary>
-        /// If ticked, the OnUse message is broadcast to the usable object's children.
-        /// </summary>
-        [Tooltip ("Broadcast OnUse message to Usable object's children.")]
-        public bool broadcastToChildren = true;
+		/// <summary>
+		/// If ticked, the OnUse message is broadcast to the usable object's children.
+		/// </summary>
+		[Tooltip ("Broadcast OnUse message to Usable object's children.")]
+		public bool broadcastToChildren = true;
 
-        /// <summary>
-        /// The actor transform to send with OnUse. Defaults to this transform.
-        /// </summary>
-        [Tooltip ("Actor transform to send with OnUse. Defaults to this transform.")]
-        public Transform actorTransform = null;
+		/// <summary>
+		/// The actor transform to send with OnUse. Defaults to this transform.
+		/// </summary>
+		[Tooltip ("Actor transform to send with OnUse. Defaults to this transform.")]
+		public Transform actorTransform = null;
 
-        public UsableUnityEvent onSelectedUsable = new UsableUnityEvent ();
+		public UsableUnityEvent onSelectedUsable = new UsableUnityEvent ();
 
-        public UsableUnityEvent onDeselectedUsable = new UsableUnityEvent ();
+		public UsableUnityEvent onDeselectedUsable = new UsableUnityEvent ();
 
-        /// <summary>
-        /// Occurs when the selector has targeted a usable object.
-        /// </summary>
-        public event SelectedUsableObjectDelegate SelectedUsableObject = null;
+		/// <summary>
+		/// Occurs when the selector has targeted a usable object.
+		/// </summary>
+		public event SelectedUsableObjectDelegate SelectedUsableObject = null;
 
-        /// <summary>
-        /// Occurs when the selector has untargeted a usable object.
-        /// </summary>
-        public event DeselectedUsableObjectDelegate DeselectedUsableObject = null;
+		/// <summary>
+		/// Occurs when the selector has untargeted a usable object.
+		/// </summary>
+		public event DeselectedUsableObjectDelegate DeselectedUsableObject = null;
 
-        /// <summary>
-        /// Gets the current usable.
-        /// </summary>
-        /// <value>The usable.</value>
-        public Usable CurrentUsable { get { return currentUsable; } }
+		/// <summary>
+		/// Gets the current usable.
+		/// </summary>
+		/// <value>The usable.</value>
+		public Usable CurrentUsable { get { return currentUsable; } }
 
-        /// <summary>
-        /// Gets the GUI style.
-        /// </summary>
-        /// <value>The GUI style.</value>
-        public GUIStyle GuiStyle { get { SetGuiStyle (); return guiStyle; } }
+		/// <summary>
+		/// Gets the GUI style.
+		/// </summary>
+		/// <value>The GUI style.</value>
+		public GUIStyle GuiStyle {
+			get {
+				SetGuiStyle ();
+				return guiStyle;
+			}
+		}
 
-        /* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~**~*~*~*~*~*~*~*~*~*~*~**~*~*~*~*~~*~ */
-        private GameObject indicatorAboveHead;
+		/* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~**~*~*~*~*~*~*~*~*~*~*~**~*~*~*~*~~*~ */
+		private GameObject indicatorAboveHead;
 
-        /* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~**~**~*~*~*~***~*~*~*~*~*~***~*~**~*~*~ */
+		/* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~**~**~*~*~*~***~*~*~*~*~*~***~*~**~*~*~ */
 
-        /// <summary>
-        /// Keeps track of which usable objects' triggers the selector is currently inside.
-        /// </summary>
-        private List<Usable> usablesInRange = new List<Usable> ();
+		/// <summary>
+		/// Keeps track of which usable objects' triggers the selector is currently inside.
+		/// </summary>
+		private List<Usable> usablesInRange = new List<Usable> ();
 
-        /// <summary>
-        /// The current usable that will receive an OnUse message if the player hits the use button.
-        /// </summary>
-        private Usable currentUsable = null;
+		/// <summary>
+		/// The current usable that will receive an OnUse message if the player hits the use button.
+		/// </summary>
+		private Usable currentUsable = null;
 
-        private string currentHeading = string.Empty;
+		private string currentHeading = string.Empty;
 
-        private string currentUseMessage = string.Empty;
+		private string currentUseMessage = string.Empty;
 
-        private bool toldListenersHaveUsable = false;
+		private bool toldListenersHaveUsable = false;
 
-        /// <summary>
-        /// Caches the GUI style to use when displaying the selection message in OnGUI.
-        /// </summary>
-        private GUIStyle guiStyle = null;
+		/// <summary>
+		/// Caches the GUI style to use when displaying the selection message in OnGUI.
+		/// </summary>
+		private GUIStyle guiStyle = null;
 
-        private const float MinTimeBetweenUseButton = 0.5f;
-        private float timeToEnableUseButton = 0;
+		private const float MinTimeBetweenUseButton = 0.5f;
+		private float timeToEnableUseButton = 0;
 
-        public void OnConversationEnd (Transform actor) {
-            timeToEnableUseButton = Time.time + MinTimeBetweenUseButton;
-        }
+		public void OnConversationEnd (Transform actor)
+		{
+			timeToEnableUseButton = Time.time + MinTimeBetweenUseButton;
+		}
 
-        /// <summary>
-        /// Start is called on the frame when a script is enabled just before
-        /// any of the Update methods is called the first time.
-        /// </summary>
-        void Start () {
-            // create indicator prefab
-            indicatorAboveHead = Instantiate (Resources.Load ("TalkableIndicator")) as GameObject;
-            indicatorAboveHead.transform.parent = this.transform;
-            indicatorAboveHead.SetActive(false);
-        }
+		/// <summary>
+		/// Start is called on the frame when a script is enabled just before
+		/// any of the Update methods is called the first time.
+		/// </summary>
+		void Start ()
+		{
+			// create indicator prefab
+			indicatorAboveHead = Instantiate (Resources.Load ("TalkableIndicator")) as GameObject;
+			indicatorAboveHead.transform.parent = this.transform;
+			indicatorAboveHead.SetActive (false);
+		}
 
-        /// <summary>
-        /// Sends an OnUse message to the current selection if the player presses the use button.
-        /// </summary>
-        void Update () {
-            // Exit if disabled or paused:
-            if (!enabled || (Time.timeScale <= 0)) return;
+		/// <summary>
+		/// Sends an OnUse message to the current selection if the player presses the use button.
+		/// </summary>
+		void Update ()
+		{
+			// Exit if disabled or paused:
+			if (!enabled || (Time.timeScale <= 0))
+				return;
 
-            if (DialogueManager.IsConversationActive) timeToEnableUseButton = Time.time + MinTimeBetweenUseButton;
+			if (DialogueManager.IsConversationActive)
+				timeToEnableUseButton = Time.time + MinTimeBetweenUseButton;
 
-            // If the currentUsable went missing (was destroyed or we changed scene), tell listeners:
-            if (toldListenersHaveUsable && currentUsable == null) {
-                SetCurrentUsable (null);
-                DeselectedUsableObject (null);
-                onDeselectedUsable.Invoke (null);
-                toldListenersHaveUsable = false;
-            }
+			// If the currentUsable went missing (was destroyed or we changed scene), tell listeners:
+			if (toldListenersHaveUsable && currentUsable == null) {
+				SetCurrentUsable (null);
+				DeselectedUsableObject (null);
+				onDeselectedUsable.Invoke (null);
+				toldListenersHaveUsable = false;
+			}
 
-            // If the player presses the use key/button, send the OnUse message:
-            if (IsUseButtonDown () && (currentUsable != null) && (currentUsable.gameObject != null) && (Time.time >= timeToEnableUseButton)) {
-                var fromTransform = (actorTransform != null) ? actorTransform : this.transform;
-                if (broadcastToChildren) {
-                    currentUsable.gameObject.BroadcastMessage ("OnUse", fromTransform, SendMessageOptions.DontRequireReceiver);
-                } else {
-                    currentUsable.gameObject.SendMessage ("OnUse", fromTransform, SendMessageOptions.DontRequireReceiver);
-                }
-            }
-        }
+			// If the player presses the use key/button, send the OnUse message:
+			if (IsUseButtonDown () && (currentUsable != null) && (currentUsable.gameObject != null) && (Time.time >= timeToEnableUseButton)) {
+				var fromTransform = (actorTransform != null) ? actorTransform : this.transform;
+				if (broadcastToChildren) {
+					currentUsable.gameObject.BroadcastMessage ("OnUse", fromTransform, SendMessageOptions.DontRequireReceiver);
+				} else {
+					currentUsable.gameObject.SendMessage ("OnUse", fromTransform, SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
 
-        /// <summary>
-        /// Checks whether the player has just pressed the use button.
-        /// </summary>
-        /// <returns>
-        /// <c>true</c> if the use button/key is down; otherwise, <c>false</c>.
-        /// </returns>
-        private bool IsUseButtonDown () {
-            if (DialogueManager.IsDialogueSystemInputDisabled ()) return false;
-            if (enableTouch && IsTouchDown ()) return true;
-            return ((useKey != KeyCode.None) && Input.GetKeyDown (useKey)) ||
-                (!string.IsNullOrEmpty (useButton) && Input.GetButtonUp (useButton));
-        }
+		/// <summary>
+		/// Checks whether the player has just pressed the use button.
+		/// </summary>
+		/// <returns>
+		/// <c>true</c> if the use button/key is down; otherwise, <c>false</c>.
+		/// </returns>
+		private bool IsUseButtonDown ()
+		{
+			if (DialogueManager.IsDialogueSystemInputDisabled ())
+				return false;
+			if (enableTouch && IsTouchDown ())
+				return true;
+			return ((useKey != KeyCode.None) && Input.GetKeyDown (useKey)) ||
+			(!string.IsNullOrEmpty (useButton) && Input.GetButtonUp (useButton));
+		}
 
-        private bool IsTouchDown () {
-            if (Input.touchCount >= 1) {
-                foreach (Touch touch in Input.touches) {
-                    Vector2 screenPosition = new Vector2 (touch.position.x, Screen.height - touch.position.y);
-                    if (touchArea.GetPixelRect ().Contains (screenPosition)) return true;
-                }
-            }
-            return false;
-        }
+		private bool IsTouchDown ()
+		{
+			if (Input.touchCount >= 1) {
+				foreach (Touch touch in Input.touches) {
+					Vector2 screenPosition = new Vector2 (touch.position.x, Screen.height - touch.position.y);
+					if (touchArea.GetPixelRect ().Contains (screenPosition))
+						return true;
+				}
+			}
+			return false;
+		}
 
-        /// <summary>
-        /// If we entered a trigger, check if it's a usable object. If so, update the selection
-        /// and raise the SelectedUsableObject event.
-        /// </summary>
-        /// <param name='other'>
-        /// The trigger collider.
-        /// </param>
-        void OnTriggerEnter (Collider other) {
-            CheckTriggerEnter (other.gameObject);
-        }
+		/// <summary>
+		/// If we entered a trigger, check if it's a usable object. If so, update the selection
+		/// and raise the SelectedUsableObject event.
+		/// </summary>
+		/// <param name='other'>
+		/// The trigger collider.
+		/// </param>
+		void OnTriggerStay (Collider other)
+		{
+			CheckTriggerEnter (other.gameObject);
+		}
 
-        /// <summary>
-        /// If we entered a 2D trigger, check if it's a usable object. If so, update the selection
-        /// and raise the SelectedUsableObject event.
-        /// </summary>
-        /// <param name='other'>
-        /// The 2D trigger collider.
-        /// </param>
-        void OnTriggerEnter2D (Collider2D other) {
-            CheckTriggerEnter (other.gameObject);
-        }
+		/// <summary>
+		/// If we entered a 2D trigger, check if it's a usable object. If so, update the selection
+		/// and raise the SelectedUsableObject event.
+		/// </summary>
+		/// <param name='other'>
+		/// The 2D trigger collider.
+		/// </param>
+		void OnTriggerStay2D (Collider2D other)
+		{
+			CheckTriggerEnter (other.gameObject);
+		}
 
-        /// <summary>
-        /// If we just left a trigger, check if it's the current selection. If so, clear the
-        /// selection and raise the DeselectedUsableObject event. If we're still in range of
-        /// any other usables, select one of them.
-        /// </summary>
-        /// <param name='other'>
-        /// The trigger collider.
-        /// </param>
-        void OnTriggerExit (Collider other) {
-            CheckTriggerExit (other.gameObject);
-        }
+		/// <summary>
+		/// If we just left a trigger, check if it's the current selection. If so, clear the
+		/// selection and raise the DeselectedUsableObject event. If we're still in range of
+		/// any other usables, select one of them.
+		/// </summary>
+		/// <param name='other'>
+		/// The trigger collider.
+		/// </param>
+		void OnTriggerExit (Collider other)
+		{
+			CheckTriggerExit (other.gameObject);
+		}
 
-        /// <summary>
-        /// If we just left a 2D trigger, check if it's the current selection. If so, clear the
-        /// selection and raise the DeselectedUsableObject event. If we're still in range of
-        /// any other usables, select one of them.
-        /// </summary>
-        /// <param name='other'>
-        /// The 2D trigger collider.
-        /// </param>
-        void OnTriggerExit2D (Collider2D other) {
-            CheckTriggerExit (other.gameObject);
-        }
+		/// <summary>
+		/// If we just left a 2D trigger, check if it's the current selection. If so, clear the
+		/// selection and raise the DeselectedUsableObject event. If we're still in range of
+		/// any other usables, select one of them.
+		/// </summary>
+		/// <param name='other'>
+		/// The 2D trigger collider.
+		/// </param>
+		void OnTriggerExit2D (Collider2D other)
+		{
+			CheckTriggerExit (other.gameObject);
+		}
 
-        private void CheckTriggerEnter (GameObject other) {
-            // cast a ray to check if the player is facing the usable object
-			Ray ray = new Ray();
-			ray.origin = this.gameObject.transform.position;
+		private void CheckTriggerEnter (GameObject other)
+		{
+			// cast a ray to check if the player is facing the usable object
+			Ray ray = new Ray ();
+			ray.origin = this.gameObject.transform.position + new Vector3 (0, 1, 0);
 			ray.direction = this.gameObject.transform.forward;
 			Debug.DrawRay (ray.origin, ray.direction, Color.red);
 			Debug.Log ("CALLING");
+			Debug.Log (usablesInRange.Count);
 
-            Usable usable = other.GetComponent<Usable> ();
-            if (usable != null) {
-                SetCurrentUsable (usable);
-                if (!usablesInRange.Contains (usable)) usablesInRange.Add (usable);
-                if (SelectedUsableObject != null) SelectedUsableObject (usable);
-                onSelectedUsable.Invoke (usable);
-                toldListenersHaveUsable = true;
+			Usable usable = other.GetComponent<Usable> ();
 
-                // LUKE - my changes
-                toggleIndicatorAboveHead (true, other);
-            }
-        }
+			RaycastHit hit;
+			Physics.SphereCast (ray, 2f, out hit, Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)));
+			Usable hitUsable = null;
+			if (hit.collider != null && hit.collider.gameObject != null) {
+				hitUsable = hit.collider.gameObject.GetComponent<Usable> () as Usable;
+			}
+			if (usable != null && hitUsable != null && GameObject.ReferenceEquals (usable.gameObject, hitUsable.gameObject)) {
+				if (!usablesInRange.Contains (usable))
+					usablesInRange.Add (usable);
+				SetCurrentUsable (usable);
+				if (SelectedUsableObject != null)
+					SelectedUsableObject (usable);
+				onSelectedUsable.Invoke (usable);
+				toldListenersHaveUsable = true;
 
-        private void CheckTriggerExit (GameObject other) {
-            Usable usable = other.GetComponent<Usable> ();
-            if (usable != null) {
-                if (usablesInRange.Contains (usable)) {
-                    usablesInRange.Remove (usable);
-                }
-                if (currentUsable == usable) {
-                    if (DeselectedUsableObject != null) {
-                        DeselectedUsableObject (usable);
-                    }
-                    onDeselectedUsable.Invoke (usable);
-                    toldListenersHaveUsable = false;
-                    Usable newUsable = null;
-                    if (usablesInRange.Count > 0) {
-                        newUsable = usablesInRange[0];
-                        if (SelectedUsableObject != null) SelectedUsableObject (newUsable);
-                        onSelectedUsable.Invoke (newUsable);
-                        toldListenersHaveUsable = true;
-                    }
-                    SetCurrentUsable (newUsable);
-                    toggleIndicatorAboveHead (true, other);
-                }
-            }
-            toggleIndicatorAboveHead (false, other);
-        }
+				// LUKE - my changes
+				toggleIndicatorAboveHead (true, other);
+			} else {
+				// untrigger
+				CheckTriggerExit (other);
+			}
 
-        private void SetCurrentUsable (Usable usable) {
-            currentUsable = usable;
-            if (usable != null) {
-                currentHeading = currentUsable.GetName ();
-                currentUseMessage = string.IsNullOrEmpty (currentUsable.overrideUseMessage) ? defaultUseMessage : currentUsable.overrideUseMessage;
-            } else {
-                currentHeading = string.Empty;
-                currentUseMessage = string.Empty;
-            }
-        }
+		}
 
-        /// <summary>
-        /// If useDefaultGUI is <c>true</c> and a usable object has been targeted, this method
-        /// draws a selection message and targeting reticle.
-        /// </summary>
-        public virtual void OnGUI () {
-            if (useDefaultGUI) {
-                SetGuiStyle ();
-                Rect screenRect = new Rect (0, 0, Screen.width, Screen.height);
-                if (currentUsable != null) {
-                    UnityGUITools.DrawText (screenRect, currentHeading, guiStyle, textStyle, textStyleColor);
-                    UnityGUITools.DrawText (new Rect (0, guiStyle.CalcSize (new GUIContent ("Ay")).y, Screen.width, Screen.height), currentUseMessage, guiStyle, textStyle, textStyleColor);
-                }
-            }
-        }
+		private void CheckTriggerExit (GameObject other)
+		{
+			Debug.Log ("exiting");
+			Usable usable = other.GetComponent<Usable> ();
+			if (usable != null) {
+				if (usablesInRange.Contains (usable)) {
+					usablesInRange.Remove (usable);
+				}
+				if (currentUsable == usable) {
+					if (DeselectedUsableObject != null) {
+						DeselectedUsableObject (usable);
+					}
+					onDeselectedUsable.Invoke (usable);
+					toldListenersHaveUsable = false;
+					Usable newUsable = null;
+					if (usablesInRange.Count > 0) {
+						newUsable = usablesInRange [0];
+						if (SelectedUsableObject != null)
+							SelectedUsableObject (newUsable);
+						onSelectedUsable.Invoke (newUsable);
+						toldListenersHaveUsable = true;
+					}
+					SetCurrentUsable (newUsable);
+					toggleIndicatorAboveHead (true, other);
+				}
+				toggleIndicatorAboveHead (false, other);
+			}
+		}
 
-        protected void SetGuiStyle () {
-            GUI.skin = UnityGUITools.GetValidGUISkin (guiSkin);
-            if (guiStyle == null) {
-                guiStyle = new GUIStyle (GUI.skin.FindStyle (guiStyleName) ?? GUI.skin.label);
-                guiStyle.alignment = alignment;
-                guiStyle.normal.textColor = color;
-            }
-        }
+		private void SetCurrentUsable (Usable usable)
+		{
+			currentUsable = usable;
+			if (usable != null) {
+				currentHeading = currentUsable.GetName ();
+				currentUseMessage = string.IsNullOrEmpty (currentUsable.overrideUseMessage) ? defaultUseMessage : currentUsable.overrideUseMessage;
+			} else {
+				currentHeading = string.Empty;
+				currentUseMessage = string.Empty;
+			}
+		}
 
-        /* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
-        private void toggleIndicatorAboveHead (bool isEnabled, GameObject other) {
+		/// <summary>
+		/// If useDefaultGUI is <c>true</c> and a usable object has been targeted, this method
+		/// draws a selection message and targeting reticle.
+		/// </summary>
+		public virtual void OnGUI ()
+		{
+			if (useDefaultGUI) {
+				SetGuiStyle ();
+				Rect screenRect = new Rect (0, 0, Screen.width, Screen.height);
+				if (currentUsable != null) {
+					UnityGUITools.DrawText (screenRect, currentHeading, guiStyle, textStyle, textStyleColor);
+					UnityGUITools.DrawText (new Rect (0, guiStyle.CalcSize (new GUIContent ("Ay")).y, Screen.width, Screen.height), currentUseMessage, guiStyle, textStyle, textStyleColor);
+				}
+			}
+		}
 
-            indicatorAboveHead.transform.parent = other.transform;
-            indicatorAboveHead.SetActive(isEnabled);
+		protected void SetGuiStyle ()
+		{
+			GUI.skin = UnityGUITools.GetValidGUISkin (guiSkin);
+			if (guiStyle == null) {
+				guiStyle = new GUIStyle (GUI.skin.FindStyle (guiStyleName) ?? GUI.skin.label);
+				guiStyle.alignment = alignment;
+				guiStyle.normal.textColor = color;
+			}
+		}
 
-            RectTransform rt = indicatorAboveHead.GetComponent<RectTransform> ();
-            rt.anchoredPosition3D = new Vector3 (0f, 3.5f, 0f);
+		/* *~*~*~*~*~*~*~*~*~*~* MY CHANGES *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
+		private void toggleIndicatorAboveHead (bool isEnabled, GameObject other)
+		{
 
-        }
-        /* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
+			indicatorAboveHead.transform.parent = other.transform;
+			indicatorAboveHead.SetActive (isEnabled);
 
-    }
+			RectTransform rt = indicatorAboveHead.GetComponent<RectTransform> ();
+			rt.anchoredPosition3D = new Vector3 (0f, 3.5f, 0f);
+
+		}
+		/* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
+
+	}
 
 }
