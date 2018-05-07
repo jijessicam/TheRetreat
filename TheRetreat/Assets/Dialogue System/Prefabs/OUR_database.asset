@@ -136,7 +136,7 @@ MonoBehaviour:
   - id: 5
     fields:
     - title: Name
-      value: Lay-La
+      value: Layla
       type: 0
       typeString: 
     - title: Pictures
@@ -151,7 +151,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: ebd08978a86c87c4091b2db0a5320b7b, type: 3}
     alternatePortraits: []
   - id: 6
     fields:
@@ -171,7 +171,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: fbd2b7b84a4b8ca4cb89abecd61222c4, type: 3}
     alternatePortraits: []
   - id: 7
     fields:
@@ -191,7 +191,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: ef0bf39674656aa44839963e80c48bdf, type: 3}
     alternatePortraits: []
   - id: 8
     fields:
@@ -211,7 +211,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 75f54db1ed675984fa5bd68c7a457ea0, type: 3}
     alternatePortraits: []
   - id: 9
     fields:
@@ -231,7 +231,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 99ba3992fc5ff41428f1192c2796864b, type: 3}
     alternatePortraits: []
   - id: 10
     fields:
@@ -251,7 +251,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: b67bfa55cdac9e54cada61d02ee34365, type: 3}
     alternatePortraits: []
   - id: 11
     fields:
@@ -271,12 +271,12 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 544e9c3a5351d4d4a87ec128e326a3b9, type: 3}
     alternatePortraits: []
   - id: 12
     fields:
     - title: Name
-      value: Yasmin
+      value: Greg
       type: 0
       typeString: 
     - title: Pictures
@@ -291,7 +291,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: eb8854d225b7f4048806ec266804733d, type: 3}
     alternatePortraits: []
   - id: 13
     fields:
@@ -311,7 +311,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: bb01b584b0d204c49b8fbb29949e7df3, type: 3}
     alternatePortraits: []
   - id: 14
     fields:
@@ -331,7 +331,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 44fcc7d6eb36c3444bb823e51fe55c9a, type: 3}
     alternatePortraits: []
   - id: 15
     fields:
@@ -393,6 +393,1550 @@ MonoBehaviour:
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 2800000, guid: 728e6aedfea5442479874e77bd0ef147, type: 3}
     alternatePortraits: []
+  - id: 18
+    fields:
+    - title: Name
+      value: Jamie
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: 6f63e99e947750d40895431c4bf52afe, type: 3}
+    alternatePortraits: []
+  - id: 19
+    fields:
+    - title: Name
+      value: Stew
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: d3d6f13579a99ff4eae2c79e481e232c, type: 3}
+    alternatePortraits: []
+  - id: 20
+    fields:
+    - title: Name
+      value: Ragout
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: 8c7f62c566801a141a9c377a542f4572, type: 3}
+    alternatePortraits: []
+  - id: 21
+    fields:
+    - title: Name
+      value: Confit
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: 492bdb45770313543b2304ee6bebf394, type: 3}
+    alternatePortraits: []
+  - id: 22
+    fields:
+    - title: Name
+      value: Julia
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 23
+    fields:
+    - title: Name
+      value: Wanda
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 24
+    fields:
+    - title: Name
+      value: Arthur
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 25
+    fields:
+    - title: Name
+      value: Erika
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: 0593da7f21b6a594ca8465fe254c929e, type: 3}
+    alternatePortraits: []
+  - id: 26
+    fields:
+    - title: Name
+      value: Ollie
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: f56e61257f64df7408f5c6dc85da7b4f, type: 3}
+    alternatePortraits: []
+  - id: 27
+    fields:
+    - title: Name
+      value: Travis
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 28
+    fields:
+    - title: Name
+      value: William
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 29
+    fields:
+    - title: Name
+      value: Seth
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 30
+    fields:
+    - title: Name
+      value: Sam
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 31
+    fields:
+    - title: Name
+      value: Mario
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 32
+    fields:
+    - title: Name
+      value: Pat
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 33
+    fields:
+    - title: Name
+      value: Thomas
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 34
+    fields:
+    - title: Name
+      value: Kid Croc 1
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 35
+    fields:
+    - title: Name
+      value: Kid Croc 2
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 36
+    fields:
+    - title: Name
+      value: Cassie
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 37
+    fields:
+    - title: Name
+      value: Yvonne
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 38
+    fields:
+    - title: Name
+      value: Fidel
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 39
+    fields:
+    - title: Name
+      value: Mei
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 40
+    fields:
+    - title: Name
+      value: Felix
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 41
+    fields:
+    - title: Name
+      value: Marianne
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 42
+    fields:
+    - title: Name
+      value: Olivia
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 43
+    fields:
+    - title: Name
+      value: Teresa
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 44
+    fields:
+    - title: Name
+      value: Bear_B_Ninja_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: 'Billy '
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 93334006442dd3b479d31db776fbea08, type: 3}
+    alternatePortraits: []
+  - id: 45
+    fields:
+    - title: Name
+      value: Chicken_Surgeon
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Charlie
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: d7263fd2b0535d64a8144542e23519b3, type: 3}
+    alternatePortraits: []
+  - id: 46
+    fields:
+    - title: Name
+      value: Chipmunk_Suit_C (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Chaz
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: b5f35426e7c3dfa4db1b9391581374cf, type: 3}
+    alternatePortraits: []
+  - id: 47
+    fields:
+    - title: Name
+      value: Chipmunk_Suit_C
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Chance
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: b5f35426e7c3dfa4db1b9391581374cf, type: 3}
+    alternatePortraits: []
+  - id: 48
+    fields:
+    - title: Name
+      value: Chipmunk_Office_C
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Chase
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 4818cd21ad61ae440abb81e6dbdfff04, type: 3}
+    alternatePortraits: []
+  - id: 49
+    fields:
+    - title: Name
+      value: Ben_Bear_A_Army
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Big Ben
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: e13a10b237078d642bb63df87b7e405f, type: 3}
+    alternatePortraits: []
+  - id: 50
+    fields:
+    - title: Name
+      value: Chicken_Surgeon (2)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: d7263fd2b0535d64a8144542e23519b3, type: 3}
+    alternatePortraits: []
+  - id: 51
+    fields:
+    - title: Name
+      value: Chipmunk_Office_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 2800000, guid: 047c6215084930841b2a2ddcc0c5d440, type: 3}
+    alternatePortraits: []
+  - id: 52
+    fields:
+    - title: Name
+      value: Deer_C_Diver (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Dale
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 1adc20f599ab6dd45b474303010e3557, type: 3}
+    alternatePortraits: []
+  - id: 53
+    fields:
+    - title: Name
+      value: Deer_C_Diver
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Doobie
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 1adc20f599ab6dd45b474303010e3557, type: 3}
+    alternatePortraits: []
+  - id: 54
+    fields:
+    - title: Name
+      value: Deer_B_Navy
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Dave
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: b7f38316eb10463459a38aacdce3a2e9, type: 3}
+    alternatePortraits: []
+  - id: 56
+    fields:
+    - title: Name
+      value: Deer_C_Navy
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Deirdre
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: f2dbdcd3dcbfffd409ada503f380ff1c, type: 3}
+    alternatePortraits: []
+  - id: 55
+    fields:
+    - title: Name
+      value: Hippo_Worker_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Henrietta
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 2eb2770ae22b06041b601fccad56c176, type: 3}
+    alternatePortraits: []
+  - id: 57
+    fields:
+    - title: Name
+      value: Hippo_Worker_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Hailey
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: a84351f5d32d2e54aba421341e9050f6, type: 3}
+    alternatePortraits: []
+  - id: 58
+    fields:
+    - title: Name
+      value: Rhino_Casual_F
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Ronda
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: c07d1d3b7e231594b898f65a598f5bd2, type: 3}
+    alternatePortraits: []
+  - id: 59
+    fields:
+    - title: Name
+      value: Rabbit_C_Casual_E
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Roland
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: ba7463d5006dd6f47afd04f1ae5bc5fa, type: 3}
+    alternatePortraits: []
+  - id: 60
+    fields:
+    - title: Name
+      value: Monkey_A_Casual_F (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Milly
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: fe2f5fa983c7c834b9fba792d9deb6a0, type: 3}
+    alternatePortraits: []
+  - id: 61
+    fields:
+    - title: Name
+      value: Rhino_Casual_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Ralph
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: a8cceaebcc4b6c84f8189249e46395e4, type: 3}
+    alternatePortraits: []
+  - id: 62
+    fields:
+    - title: Name
+      value: Rabbit_C_Casual_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Randy
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: b7b4a881a1d54b94ea9e0bc0d03494f5, type: 3}
+    alternatePortraits: []
+  - id: 63
+    fields:
+    - title: Name
+      value: Monkey_A_Casual_E
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Molly
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: f54de9bb19f2d0444814965a6dad6f53, type: 3}
+    alternatePortraits: []
+  - id: 64
+    fields:
+    - title: Name
+      value: Rabbit_C_Suit_C
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Rodrigo
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 81f0d5e6d6fadfa4886c6ee9f6531b1a, type: 3}
+    alternatePortraits: []
+  - id: 65
+    fields:
+    - title: Name
+      value: Chicken_Doctor
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Charlene
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: de00a2b29ef082349997adeefc388c6e, type: 3}
+    alternatePortraits: []
+  - id: 66
+    fields:
+    - title: Name
+      value: Panda_Casual_F
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Polly
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: e5f0fefe653ef1445bdc9fda83011ff8, type: 3}
+    alternatePortraits: []
+  - id: 67
+    fields:
+    - title: Name
+      value: Rabbit_C_Office_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Rex
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 47b83e017b0aa3a47ad69f49dd215d41, type: 3}
+    alternatePortraits: []
+  - id: 68
+    fields:
+    - title: Name
+      value: Panda_Casual_E (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Paddy
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: c0f12c008eb51c54982c58768fbc4c5e, type: 3}
+    alternatePortraits: []
+  - id: 69
+    fields:
+    - title: Name
+      value: Rhino_Gent_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Rhianna
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: cc6527e05a8b6b145ba2ea6b7a674ab6, type: 3}
+    alternatePortraits: []
+  - id: 70
+    fields:
+    - title: Name
+      value: Panda_Casual_E
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Penelope
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: c0f12c008eb51c54982c58768fbc4c5e, type: 3}
+    alternatePortraits: []
+  - id: 71
+    fields:
+    - title: Name
+      value: Moose_Doctor
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Mark
+      type: 0
+      typeString: 
+    portrait: {fileID: 0}
+    alternatePortraits: []
+  - id: 72
+    fields:
+    - title: Name
+      value: Mallard_Suit_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Drew
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: a59e2e3757d74224fbc05f7eea0f67d1, type: 3}
+    alternatePortraits: []
+  - id: 73
+    fields:
+    - title: Name
+      value: Rhino_Gent_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Ron
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: a3348203b1605464197277d3c1f67369, type: 3}
+    alternatePortraits: []
+  - id: 74
+    fields:
+    - title: Name
+      value: Mallard_Casual_E
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Keith
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 50561a9d533b4364899d230429caaba1, type: 3}
+    alternatePortraits: []
+  - id: 75
+    fields:
+    - title: Name
+      value: Panda_Worker_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Barry
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: abae781fc24716240bb91817a14a905b, type: 3}
+    alternatePortraits: []
+  - id: 76
+    fields:
+    - title: Name
+      value: Duck_Casual_F
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Gareth
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 2301d6db60e9b57409a01c8d82cab712, type: 3}
+    alternatePortraits: []
+  - id: 77
+    fields:
+    - title: Name
+      value: Panda_Worker_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Sarah
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: c8c9dab6adcc08f439ce286ce004ea24, type: 3}
+    alternatePortraits: []
+  - id: 78
+    fields:
+    - title: Name
+      value: Duck_Gent_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Shelley
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 4838b45e92d1e5745af0f414817dd267, type: 3}
+    alternatePortraits: []
+  - id: 79
+    fields:
+    - title: Name
+      value: Panda_Thief
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Vuj
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 086137f29f6d78e42abeb158a6c12b38, type: 3}
+    alternatePortraits: []
+  - id: 80
+    fields:
+    - title: Name
+      value: Croc_B_Office_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Old Major
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: ebaf7051d865d6d4785914110727ebd4, type: 3}
+    alternatePortraits: []
+  - id: 81
+    fields:
+    - title: Name
+      value: Croc_B_Casual_A
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Danielle
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 00af610d3c2aa204b97fbb4b8ad545ee, type: 3}
+    alternatePortraits: []
+  - id: 82
+    fields:
+    - title: Name
+      value: Bear_A_Ninja_B
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Nicole
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 66d9dde8b95ea7248840d6083d24f550, type: 3}
+    alternatePortraits: []
+  - id: 83
+    fields:
+    - title: Name
+      value: Chicken_Surgeon (3)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Edward
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: d7263fd2b0535d64a8144542e23519b3, type: 3}
+    alternatePortraits: []
+  - id: 84
+    fields:
+    - title: Name
+      value: Chicken_Surgeon (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Peyton
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: d7263fd2b0535d64a8144542e23519b3, type: 3}
+    alternatePortraits: []
+  - id: 85
+    fields:
+    - title: Name
+      value: Dog_C_Hazmat_C
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Adrian
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 7068d5cd690fe70468d8dc57fbaaad98, type: 3}
+    alternatePortraits: []
+  - id: 86
+    fields:
+    - title: Name
+      value: Dog_C_Hazmat_C (1)
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Aaron
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 7068d5cd690fe70468d8dc57fbaaad98, type: 3}
+    alternatePortraits: []
   items:
   - id: 1
     fields:
@@ -438,24 +1982,6 @@ MonoBehaviour:
       typeString: CustomFieldType_Boolean
     - title: Abandonable
       value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-  - id: 2
-    fields:
-    - title: Name
-      value: New Item 2
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Is Item
-      value: True
       type: 2
       typeString: CustomFieldType_Boolean
   - id: 3
@@ -734,7 +2260,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I\u2019m Lorena Zamora, a reporter. I\u2019m here to cover the relocation
-          of the RETREAT."
+          of this Retreat."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1289,7 +2815,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 10
         destinationConversationID: 1
-        destinationDialogueID: 22
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1375,8 +2901,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1534.1603
+        x: 919.6755
+        y: 1600.4879
         width: 160
         height: 30
     - id: 12
@@ -1464,8 +2990,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1584.1603
+        x: 919.6755
+        y: 1650.4879
         width: 160
         height: 30
     - id: 13
@@ -1538,8 +3064,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1634.1603
+        x: 919.6755
+        y: 1700.4879
         width: 160
         height: 30
     - id: 14
@@ -1599,7 +3125,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 14
         destinationConversationID: 1
-        destinationDialogueID: 15
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1611,8 +3137,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1684.1603
+        x: 919.6755
+        y: 1750.4879
         width: 160
         height: 30
     - id: 15
@@ -2118,12 +3644,160 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 929.72504
-        y: 1484.1603
+        x: 919.6755
+        y: 1544.4581
         width: 160
         height: 30
-    canvasScrollPosition: {x: 538.8474, y: 837.30237}
-    canvasZoom: 0.59303236
+    - id: 23
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'And do be careful. This camp may look small, but it''s old. Some of
+          the residents can be a bit...volatile. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 23
+        destinationConversationID: 1
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 917.6655
+        y: 1812.5475
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: It was quite a surprise. We haven't had a reporter here in years. Usually
+          they all want to see the big camps. California, the Carolinas...
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 24
+        destinationConversationID: 1
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 921.6854
+        y: 1488.1802
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 459.54636, y: 523.89233}
+    canvasZoom: 0.4975299
   - id: 2
     fields:
     - title: Title
@@ -4155,7 +5829,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Title
-      value: Filler 1
+      value: Filler 1 (Layla)
       type: 0
       typeString: 
     - title: Pictures
@@ -4293,7 +5967,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "  used to love going for walks! But with the shortage of water, I
+        value: "I used to love going for walks! But with the shortage of water, I
           have to avoid exercising where I can\u2026"
         type: 0
         typeString: 
@@ -4339,7 +6013,7 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Title
-      value: Filler 2
+      value: Filler 2 (Erika)
       type: 0
       typeString: 
     - title: Pictures
@@ -4392,11 +6066,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: -1
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4465,11 +6139,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 25
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: -1
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4477,8 +6151,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Your clothes are too clean. Go get some dirt on ya before thinking
-          you can just waltz up to me and strike a conversation.
+        value: Who are you? Your clothes are too clean. Go get some dirt on ya before
+          thinking you can just waltz up to me and strike up a conversation.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4523,7 +6197,7 @@ MonoBehaviour:
   - id: 5
     fields:
     - title: Title
-      value: Filler 3
+      value: Filler 3 (Mitch)
       type: 0
       typeString: 
     - title: Pictures
@@ -4612,7 +6286,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 5
@@ -4662,7 +6336,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "You\u2019re a journalist, huh? Well maybe you can talk about the theft
-          here."
+          here. Even us officers aren't safe. "
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4854,7 +6528,7 @@ MonoBehaviour:
   - id: 6
     fields:
     - title: Title
-      value: Filler 4
+      value: Filler 4 (Julia)
       type: 0
       typeString: 
     - title: Pictures
@@ -5034,8 +6708,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 31.984116
+        y: 70.992065
         width: 160
         height: 30
     - id: 2
@@ -5184,7 +6858,7 @@ MonoBehaviour:
   - id: 7
     fields:
     - title: Title
-      value: Filler 5
+      value: Filler 5 (Samantha)
       type: 0
       typeString: 
     - title: Pictures
@@ -5322,8 +6996,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I so tired of seeing brown everywhere. I\u2019d do anything for something
-          green."
+        value: "I'm so tired of seeing brown everywhere. I\u2019d do anything for
+          something green."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5368,7 +7042,7 @@ MonoBehaviour:
   - id: 8
     fields:
     - title: Title
-      value: Filler 6
+      value: Filler 6 (Officer)
       type: 0
       typeString: 
     - title: Pictures
@@ -5457,7 +7131,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 8
@@ -5506,7 +7180,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I hope you are finding your visit well.
+        value: 'I hope you are enjoying your visit. Well, to the extent that anyone
+          can enjoy it out here. '
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5548,7 +7223,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 29
         y: 70
         width: 160
         height: 30
@@ -5579,8 +7254,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: The camp residence can be troublesome at times, do not hesitate to
-          call us to settle any conflicts.
+        value: The camp residents can be troublesome at times. Don't hesitate to call
+          us to settle any conflicts.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5625,7 +7300,7 @@ MonoBehaviour:
   - id: 9
     fields:
     - title: Title
-      value: Filler 7
+      value: Filler 7 (Mark)
       type: 0
       typeString: 
     - title: Pictures
@@ -5763,7 +7438,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Don\u2019t tell anyone, but I kinda like the weather!"
+        value: "Don\u2019t tell anyone, but I kinda like the weather here!"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5793,7 +7468,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 1
         destinationConversationID: 9
-        destinationDialogueID: 2
+        destinationDialogueID: 3
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5836,7 +7511,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "The winters aren\u2019t too cold, though the summers are brutal."
+        value: "The winters aren\u2019t too cold here, though the summers are brutal."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5873,7 +7548,81 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 120
+        y: 210
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Even before the droughts got read bad, the weather in Kansas could
+          be awful. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 9
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 9
+        originDialogueID: 3
+        destinationConversationID: 9
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 34
+        y: 133
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -5881,7 +7630,7 @@ MonoBehaviour:
   - id: 10
     fields:
     - title: Title
-      value: Filler 8
+      value: Filler 8 (Louis)
       type: 0
       typeString: 
     - title: Pictures
@@ -6137,7 +7886,7 @@ MonoBehaviour:
   - id: 11
     fields:
     - title: Title
-      value: Filler 9
+      value: Filler 9 (Greg)
       type: 0
       typeString: 
     - title: Pictures
@@ -6349,7 +8098,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I barely made it a few minutes before I collapsed from the sun.
+        value: I barely made it a few miles before I collapsed from the sun.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6422,7 +8171,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: When I woke up I was in the camp hospital.
+        value: 'When I woke up I was in the camp hospital. My wife and kids had been
+          taken away for questioning. '
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6613,7 +8363,7 @@ MonoBehaviour:
   - id: 12
     fields:
     - title: Title
-      value: Filler 10
+      value: Filler 10 (Jason)
       type: 0
       typeString: 
     - title: Pictures
@@ -6870,7 +8620,7 @@ MonoBehaviour:
   - id: 13
     fields:
     - title: Title
-      value: Filler 11
+      value: Filler 11 (Steven)
       type: 0
       typeString: 
     - title: Pictures
@@ -7081,8 +8831,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I saw you talking with the officers at the beginning, what\u2019re
-          you? Some RETREAT officer from washington?"
+        value: "I saw you talking with the officers near the entrance. What\u2019re
+          you? Some Retreat officer from Washington?"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7200,7 +8950,7 @@ MonoBehaviour:
   - id: 14
     fields:
     - title: Title
-      value: Filler 12
+      value: Filler 12 (Glenna)
       type: 0
       typeString: 
     - title: Pictures
@@ -7603,7 +9353,7 @@ MonoBehaviour:
   - id: 15
     fields:
     - title: Title
-      value: Filler 13
+      value: Filler 13 (Chris)
       type: 0
       typeString: 
     - title: Pictures
@@ -7786,7 +9536,7 @@ MonoBehaviour:
   - id: 16
     fields:
     - title: Title
-      value: New Conversation 16
+      value: 'Filler (Ollie) '
       type: 0
       typeString: 
     - title: Pictures
@@ -7875,9 +9625,15 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 0
+        destinationConversationID: 16
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7889,6 +9645,219 @@ MonoBehaviour:
         serializedVersion: 2
         x: 30
         y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Trash, trash, trash...every day more trash! '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 1
+        destinationConversationID: 16
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 31
+        y: 89
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'I can''t live like this anymore! '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 2
+        destinationConversationID: 16
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 31
+        y: 150
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: So much trash, so little of everything else...
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 209
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -12947,8 +14916,8 @@ MonoBehaviour:
         y: 282.54935
         width: 160
         height: 30
-    canvasScrollPosition: {x: 171.75946, y: 398.2345}
-    canvasZoom: 1.3159994
+    canvasScrollPosition: {x: 0, y: 124.70282}
+    canvasZoom: 0.6369985
   - id: 28
     fields:
     - title: Title
@@ -13346,7 +15315,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Rice is easy enough to come by, it's the meat and vegtables that I
+        value: Rice is easy enough to come by, it's the meat and vegetables that I
           miss...
         type: 0
         typeString: 
@@ -13530,7 +15499,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: The officers are always having fancy parties for themselves
+        value: The officers are always having fancy parties for themselves.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -13603,8 +15572,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'They eat anything they want: chicken, carrots, watermellon, you name
-          it'
+        value: 'They eat anything they want: chicken, carrots, watermelon, you name
+          it.'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -14006,7 +15975,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I would ask you to play, but my mom told me not to talk with strangers
+        value: I would ask you to play, but my mom told me not to talk to strangers.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -14627,7 +16596,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: My mom said I could get to hot and get sick if I run.
+        value: My mom said I could get too hot and get sick if I run.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18429,8 +20398,8 @@ MonoBehaviour:
         y: 919.2989
         width: 160
         height: 30
-    canvasScrollPosition: {x: 221.19203, y: 474.25958}
-    canvasZoom: 0.614996
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.591996
   - id: 36
     fields:
     - title: Title
