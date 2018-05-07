@@ -362,18 +362,43 @@ namespace PixelCrushers.DialogueSystem
 					}
 					onDeselectedUsable.Invoke (usable);
 					toldListenersHaveUsable = false;
-					Usable newUsable = null;
-					if (usablesInRange.Count > 0) {
-						newUsable = usablesInRange [0];
-						if (SelectedUsableObject != null)
-							SelectedUsableObject (newUsable);
-						onSelectedUsable.Invoke (newUsable);
-						toldListenersHaveUsable = true;
+
+					Ray ray = new Ray ();
+					ray.origin = this.gameObject.transform.position + new Vector3 (0, 1, 0);
+					ray.direction = this.gameObject.transform.forward;
+					RaycastHit hit;
+					Physics.SphereCast (ray, 2f, out hit, Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)));
+					Usable hitUsable = null;
+					if (hit.collider != null && hit.collider.gameObject != null) {
+						hitUsable = hit.collider.gameObject.GetComponent<Usable> () as Usable;
 					}
+
+					Usable newUsable = null;
+					float closestDist = 1000f;
+					for (int i = 0; i < usablesInRange.Count; i++) {
+						// check for a hit with the new usable
+						if (hitUsable != null && GameObject.ReferenceEquals (usable.gameObject, hitUsable.gameObject)) {
+							float currDist = Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0));
+							if (currDist < closestDist) {
+								newUsable = usablesInRange [i];
+								if (SelectedUsableObject != null)
+									SelectedUsableObject (newUsable);
+								onSelectedUsable.Invoke (newUsable);
+								toldListenersHaveUsable = true;
+							}
+						}
+					}
+
+					// removes the toggle indicator from the current one
+					toggleIndicatorAboveHead (false, other);
+
+					if (newUsable != null) {
+						// puts the toggle indicator on another one if needed
+						toggleIndicatorAboveHead (true, usable.gameObject);
+					}
+					// possibly null, which is good
 					SetCurrentUsable (newUsable);
-					toggleIndicatorAboveHead (true, other);
 				}
-				toggleIndicatorAboveHead (false, other);
 			}
 		}
 
