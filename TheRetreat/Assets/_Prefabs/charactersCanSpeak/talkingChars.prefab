@@ -27030,7 +27030,6 @@ GameObject:
   - component: {fileID: 114789306572562520}
   - component: {fileID: 114487143762762736}
   - component: {fileID: 114500019220024422}
-  - component: {fileID: 114788473137079830}
   m_Layer: 0
   m_Name: Jacob
   m_TagString: Untagged
@@ -64675,7 +64674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   once: 1
-  conversation: Demitri First Convo
+  conversation: Dimitri First Convo
   condition:
     luaConditions: []
     questConditions: []
@@ -65716,7 +65715,7 @@ MonoBehaviour:
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 0
+  once: 1
   conversation: Demitri Generic
   condition:
     luaConditions: []
@@ -66420,34 +66419,6 @@ MonoBehaviour:
   skipIfNoValidEntries: 0
   exclusive: 0
   conversant: {fileID: 4813675234253212}
-  useConversationTitlePicker: 1
-  selectedDatabase: {fileID: 0}
-  actor: {fileID: 4708646706861472}
-  trigger: 32
-  stopConversationOnTriggerExit: 0
---- !u!114 &114788473137079830
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814657533398840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  once: 0
-  conversation: Jacob Second Convo
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  skipIfNoValidEntries: 0
-  exclusive: 0
-  conversant: {fileID: 4949603075157934}
   useConversationTitlePicker: 1
   selectedDatabase: {fileID: 0}
   actor: {fileID: 4708646706861472}
