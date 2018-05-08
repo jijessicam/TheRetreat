@@ -27024,10 +27024,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4949603075157934}
   - component: {fileID: 95812483438691536}
+  - component: {fileID: 136034265783290638}
   - component: {fileID: 135196217207504082}
-  - component: {fileID: 114487143762762736}
   - component: {fileID: 114673153444646418}
   - component: {fileID: 114789306572562520}
+  - component: {fileID: 114487143762762736}
   - component: {fileID: 114500019220024422}
   m_Layer: 0
   m_Name: Jacob
@@ -65294,7 +65295,7 @@ MonoBehaviour:
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 0
+  once: 1
   conversation: FirstConversation
   condition:
     luaConditions: []
@@ -67395,6 +67396,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136034265783290638
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814657533398840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.12, z: 0}
 --- !u!136 &136058214687361080
 CapsuleCollider:
   m_ObjectHideFlags: 1
