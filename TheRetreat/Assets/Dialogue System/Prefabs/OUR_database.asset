@@ -7511,7 +7511,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "The winters aren\u2019t too cold here, though the summers are brutal."
+        value: "The winters aren\u2019t as cold as they used to be here, though the
+          summers are brutal."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7578,7 +7579,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Even before the droughts got read bad, the weather in Kansas could
+        value: 'Even before the droughts got really bad, the weather in Kansas could
           be awful. '
         type: 0
         typeString: CustomFieldType_Text
