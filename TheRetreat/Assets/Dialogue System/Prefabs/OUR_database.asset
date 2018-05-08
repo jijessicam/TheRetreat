@@ -5824,8 +5824,8 @@ MonoBehaviour:
         y: 1332.5745
         width: 160
         height: 30
-    canvasScrollPosition: {x: 418.32062, y: 275.42365}
-    canvasZoom: 1.0060469
+    canvasScrollPosition: {x: 424.31982, y: 275.4913}
+    canvasZoom: 1.0270469
   - id: 3
     fields:
     - title: Title
@@ -14726,7 +14726,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: You should go now, come to think of it.
+        value: "You should go now, come to think of it. Maybe getting chummy with
+          the reporter won\u2019t be too good for my standing around here."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -14756,7 +14757,7 @@ MonoBehaviour:
       - originConversationID: 27
         originDialogueID: 40
         destinationConversationID: 27
-        destinationDialogueID: 43
+        destinationDialogueID: 41
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -14799,7 +14800,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I see. Thank you, Demitri
+        value: See you, Demitri
         type: 0
         typeString: 
       - title: Parenthetical
@@ -14836,8 +14837,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 416.87646
-        y: 1818.3623
+        x: 417.8208
+        y: 1756.9835
         width: 160
         height: 30
     - id: 42
@@ -14915,82 +14916,8 @@ MonoBehaviour:
         y: 282.54935
         width: 160
         height: 30
-    - id: 43
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "Maybe getting chummy with the reporter won\u2019t be too good for
-          my standing around here."
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 27
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 27
-        originDialogueID: 43
-        destinationConversationID: 27
-        destinationDialogueID: 41
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 418.76483
-        y: 1758.8718
-        width: 160
-        height: 30
-    canvasScrollPosition: {x: 142.56242, y: 1487.325}
-    canvasZoom: 1.0590003
+    canvasScrollPosition: {x: 0, y: 124.70282}
+    canvasZoom: 0.6369985
   - id: 28
     fields:
     - title: Title
