@@ -41,14 +41,10 @@ RenderSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.73409265, g: 0.68546486, b: 0.6953518, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.73409253, g: 0.68546474, b: 0.6953517, a: 1}
 >>>>>>> f6e03013bf23176591e51b863eeabad7cd573495
-=======
-  m_IndirectSpecularColor: {r: 0.73409283, g: 0.68546534, b: 0.6953522, a: 1}
->>>>>>> parent of f6e03013... fixing demitri bug
 =======
   m_IndirectSpecularColor: {r: 0.73409283, g: 0.68546534, b: 0.6953522, a: 1}
 >>>>>>> parent of f6e03013... fixing demitri bug
