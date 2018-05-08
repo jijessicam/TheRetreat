@@ -39,14 +39,10 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.73409265, g: 0.68546486, b: 0.6953518, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.73409253, g: 0.68546474, b: 0.6953517, a: 1}
 >>>>>>> f6e03013bf23176591e51b863eeabad7cd573495
-=======
-  m_IndirectSpecularColor: {r: 0.73409283, g: 0.68546534, b: 0.6953522, a: 1}
->>>>>>> parent of f6e03013... fixing demitri bug
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -23039,7 +23035,7 @@ Prefab:
     - target: {fileID: 224584251641975080, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 224674971407564590, guid: a3eeba3c33bea494782af267db945eb0,
         type: 2}
@@ -24303,11 +24299,6 @@ Prefab:
     - target: {fileID: 4224142047184386, guid: ec5e9971d8cb241d9b9eb12391a7d8ee, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114498144462477350, guid: ec5e9971d8cb241d9b9eb12391a7d8ee,
-        type: 2}
-      propertyPath: once
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec5e9971d8cb241d9b9eb12391a7d8ee, type: 2}
