@@ -25399,6 +25399,7 @@ GameObject:
   - component: {fileID: 114598819613827250}
   - component: {fileID: 114324350206142126}
   - component: {fileID: 114655996621248652}
+  - component: {fileID: 114926964682100686}
   m_Layer: 0
   m_Name: Rosa_Bear_RETREAT_Officer
   m_TagString: Untagged
@@ -27024,13 +27025,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4949603075157934}
   - component: {fileID: 95812483438691536}
-  - component: {fileID: 136034265783290638}
   - component: {fileID: 135196217207504082}
+  - component: {fileID: 114487143762762736}
   - component: {fileID: 114673153444646418}
   - component: {fileID: 114789306572562520}
-  - component: {fileID: 114487143762762736}
   - component: {fileID: 114500019220024422}
-  - component: {fileID: 114788473137079830}
   m_Layer: 0
   m_Name: Jacob
   m_TagString: Untagged
@@ -64604,7 +64603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overrideName: Retreat Officer
+  overrideName: RETREAT Officer
   overrideUseMessage: 
   maxUseDistance: 5
 --- !u!114 &114075454096751698
@@ -64675,7 +64674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   once: 1
-  conversation: Demitri First Convo
+  conversation: Dimitri First Convo
   condition:
     luaConditions: []
     questConditions: []
@@ -65291,12 +65290,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1763259525277404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 1
+  once: 0
   conversation: FirstConversation
   condition:
     luaConditions: []
@@ -65571,7 +65570,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661023480989640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
   m_Name: 
@@ -65716,7 +65715,7 @@ MonoBehaviour:
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 0
+  once: 1
   conversation: Demitri Generic
   condition:
     luaConditions: []
@@ -66007,7 +66006,7 @@ MonoBehaviour:
   m_Script: {fileID: 1810267305, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overrideName: Retreat Officer
+  overrideName: RETREAT Officer
   internalName: 
   useLocalizedNameInDatabase: 0
 --- !u!114 &114605337125030416
@@ -66092,7 +66091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   once: 0
-  conversation: Filler 6 (Officer)
+  conversation: Filler 1
   condition:
     luaConditions: []
     questConditions: []
@@ -66425,34 +66424,6 @@ MonoBehaviour:
   actor: {fileID: 4708646706861472}
   trigger: 32
   stopConversationOnTriggerExit: 0
---- !u!114 &114788473137079830
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814657533398840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  once: 0
-  conversation: Jacob Second Convo
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  skipIfNoValidEntries: 0
-  exclusive: 0
-  conversant: {fileID: 4949603075157934}
-  useConversationTitlePicker: 1
-  selectedDatabase: {fileID: 0}
-  actor: {fileID: 4708646706861472}
-  trigger: 32
-  stopConversationOnTriggerExit: 0
 --- !u!114 &114789306572562520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66769,6 +66740,34 @@ MonoBehaviour:
   overrideName: Wanda
   overrideUseMessage: 
   maxUseDistance: 5
+--- !u!114 &114926964682100686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763259525277404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  once: 0
+  conversation: Filler 1
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 1
+  skipIfNoValidEntries: 0
+  exclusive: 0
+  conversant: {fileID: 4998453619366242}
+  useConversationTitlePicker: 1
+  selectedDatabase: {fileID: 0}
+  actor: {fileID: 4708646706861472}
+  trigger: 32
+  stopConversationOnTriggerExit: 0
 --- !u!114 &114934758317651278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67425,19 +67424,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136034265783290638
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814657533398840}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 3
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.12, z: 0}
 --- !u!136 &136058214687361080
 CapsuleCollider:
   m_ObjectHideFlags: 1
