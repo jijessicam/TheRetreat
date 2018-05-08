@@ -15297,14 +15297,9 @@ MonoBehaviour:
         width: 160
         height: 30
 <<<<<<< HEAD
-<<<<<<< HEAD
     canvasScrollPosition: {x: 99.00833, y: 185.12302}
     canvasZoom: 0.44100034
 >>>>>>> f6e03013bf23176591e51b863eeabad7cd573495
-=======
-    canvasScrollPosition: {x: 0, y: 166.5018}
-    canvasZoom: 0.31900004
->>>>>>> parent of f6e03013... fixing demitri bug
 =======
     canvasScrollPosition: {x: 0, y: 166.5018}
     canvasZoom: 0.31900004
