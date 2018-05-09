@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1097633651, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
-  m_Name: OUR_database
+  m_Name: OUR_database (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 
   author: 
@@ -1960,26 +1960,6 @@ MonoBehaviour:
       type: 0
       typeString: 
     portrait: {fileID: 2800000, guid: 7068d5cd690fe70468d8dc57fbaaad98, type: 3}
-    alternatePortraits: []
-  - id: 88
-    fields:
-    - title: Name
-      value: Andleton
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
     alternatePortraits: []
   items:
   - id: 1
@@ -10920,7 +10900,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 51
+      value: 2
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -12064,6 +12044,12 @@ MonoBehaviour:
         originDialogueID: 0
         destinationConversationID: 27
         destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 27
+        originDialogueID: 0
+        destinationConversationID: 27
+        destinationDialogueID: 44
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -15026,7 +15012,7 @@ MonoBehaviour:
       - originConversationID: 27
         originDialogueID: 40
         destinationConversationID: 27
-        destinationDialogueID: 44
+        destinationDialogueID: 41
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -15069,7 +15055,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Thanks for the tip. See you, Demitri.
+        value: See you, Demitri.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -15112,7 +15098,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 417.8208
-        y: 1815.1039
+        y: 1756.9835
         width: 160
         height: 30
     - id: 42
@@ -15255,7 +15241,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 417.8208
-        y: 1865.1039
+        y: 1806.9835
         width: 160
         height: 30
     - id: 44
@@ -15273,11 +15259,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 17
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -15285,8 +15271,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Try talking to the doctors, though. They see a lot of action and a
-          lot of people in the camp every day.
+        value: 
         type: 0
         typeString: 
       - title: Parenthetical
@@ -15312,13 +15297,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 27
-        originDialogueID: 44
-        destinationConversationID: 27
-        destinationDialogueID: 41
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -15328,12 +15307,12 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 417.03485
-        y: 1763.1714
+        x: 406
+        y: 71
         width: 160
         height: 30
-    canvasScrollPosition: {x: 147.08432, y: 1304.6703}
-    canvasZoom: 0.77002305
+    canvasScrollPosition: {x: 2.145752, y: 0}
+    canvasZoom: 0.46602228
   - id: 28
     fields:
     - title: Title
@@ -43358,7 +43337,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 425
-        y: 66.01944
+        y: 94
         width: 160
         height: 30
     - id: 2
@@ -43389,7 +43368,8 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I\u2019m very busy; we\u2019re tragically understocked here these
-          days."
+          days, and I have to make calls to neighboring RETREAT camps every day to
+          see if we can trade any supplies with their runners."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -43419,7 +43399,13 @@ MonoBehaviour:
       - originConversationID: 92
         originDialogueID: 2
         destinationConversationID: 92
-        destinationDialogueID: 29
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      - originConversationID: 92
+        originDialogueID: 2
+        destinationConversationID: 92
+        destinationDialogueID: 4
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -43431,8 +43417,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 422.35037
-        y: 109.50363
+        x: 426
+        y: 146
         width: 160
         height: 30
     - id: 3
@@ -43828,7 +43814,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "There\u2019s also the Utah RETREAT."
+        value: "There\u2019s also the Utah RETREAT, who, like us, get a lot of traffic
+          in from Phoenix and the Mojave or Death Valley areas that have just become
+          uninhabitable due to the drought and heat."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -43858,7 +43846,7 @@ MonoBehaviour:
       - originConversationID: 92
         originDialogueID: 8
         destinationConversationID: 92
-        destinationDialogueID: 30
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -43944,8 +43932,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 296.78348
-        y: 503.90997
+        x: 298
+        y: 437
         width: 160
         height: 30
     - id: 10
@@ -44092,7 +44080,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 553
-        y: 296.78345
+        y: 298
         width: 160
         height: 30
     - id: 12
@@ -44314,7 +44302,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 558
-        y: 428.21655
+        y: 427
         width: 160
         height: 30
     - id: 15
@@ -44382,7 +44370,7 @@ MonoBehaviour:
       - originConversationID: 92
         originDialogueID: 15
         destinationConversationID: 92
-        destinationDialogueID: 31
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -44906,161 +44894,7 @@ MonoBehaviour:
         y: 906.2792
         width: 160
         height: 30
-    - id: 29
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 41
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I have to make calls to neighboring RETREAT camps every day to see
-          if we can trade any supplies with their runners.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 92
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 92
-        originDialogueID: 29
-        destinationConversationID: 92
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      - originConversationID: 92
-        originDialogueID: 29
-        destinationConversationID: 92
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 425.3356
-        y: 149.63503
-        width: 160
-        height: 30
-    - id: 30
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 41
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: They get a lot of traffic in from Phoenix and the Mojave or Death Valley
-          areas that have just become uninhabitable due to the drought and heat.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 92
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 92
-        originDialogueID: 30
-        destinationConversationID: 92
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 296.38184
-        y: 437.9561
-        width: 160
-        height: 30
-    - id: 31
+    - id: 23
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45115,9 +44949,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 31
+        originDialogueID: 23
         destinationConversationID: 92
-        destinationDialogueID: 32
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -45129,11 +44963,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 709.7675
-        y: 551.33105
+        x: 725.14014
+        y: 531.9771
         width: 160
         height: 30
-    - id: 32
+    - id: 24
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45188,9 +45022,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 32
+        originDialogueID: 24
         destinationConversationID: 92
-        destinationDialogueID: 33
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -45202,11 +45036,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 709.7675
-        y: 601.33105
+        x: 725.14014
+        y: 581.9771
         width: 160
         height: 30
-    - id: 33
+    - id: 25
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45261,9 +45095,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 33
+        originDialogueID: 25
         destinationConversationID: 92
-        destinationDialogueID: 34
+        destinationDialogueID: 26
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -45275,11 +45109,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 709.7675
-        y: 651.33105
+        x: 725.14014
+        y: 631.9771
         width: 160
         height: 30
-    - id: 34
+    - id: 26
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45335,9 +45169,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 34
+        originDialogueID: 26
         destinationConversationID: 92
-        destinationDialogueID: 35
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -45349,11 +45183,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 712.7675
-        y: 694.33105
+        x: 728.14014
+        y: 674.9771
         width: 160
         height: 30
-    - id: 35
+    - id: 27
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45380,7 +45214,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "There\u2019s also the Utah RETREAT."
+        value: "There\u2019s also the Utah RETREAT, who, like us, get a lot of traffic
+          in from Phoenix and the Mojave or Death Valley areas that have just become
+          uninhabitable due to the drought and heat."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -45408,9 +45244,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 35
+        originDialogueID: 27
         destinationConversationID: 92
-        destinationDialogueID: 37
+        destinationDialogueID: 28
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -45422,11 +45258,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 715.7675
-        y: 738.33105
+        x: 731.14014
+        y: 718.9771
         width: 160
         height: 30
-    - id: 36
+    - id: 28
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -45482,7 +45318,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 92
-        originDialogueID: 36
+        originDialogueID: 28
         destinationConversationID: 92
         destinationDialogueID: 16
         isConnector: 0
@@ -45496,86 +45332,12 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 712.551
-        y: 851.2411
+        x: 729.14014
+        y: 764.9771
         width: 160
         height: 30
-    - id: 37
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 41
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: They get a lot of traffic in from Phoenix and the Mojave or Death Valley
-          areas that have just become uninhabitable due to the drought and heat.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 92
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 92
-        originDialogueID: 37
-        destinationConversationID: 92
-        destinationDialogueID: 36
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 712.14935
-        y: 785.2872
-        width: 160
-        height: 30
-    canvasScrollPosition: {x: 71.601166, y: 0}
-    canvasZoom: 0.78899956
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.68799955
   - id: 93
     fields:
     - title: Title
@@ -48984,8 +48746,8 @@ MonoBehaviour:
         y: 1017.5444
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 232.92891}
-    canvasZoom: 0.63296986
+    canvasScrollPosition: {x: 8.621216, y: 0}
+    canvasZoom: 0.46396834
   - id: 94
     fields:
     - title: Title
@@ -52567,7 +52329,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 530
+        x: 531
         y: 410
         width: 160
         height: 30
@@ -53333,8 +53095,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Many people in the camp have experienced a tent collapse in the middle
-          of the night during bad storms.
+        value: Most people in the camp have woken up as their tent falls down on them
+          by this point.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -53360,13 +53122,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 21
-        destinationConversationID: 95
-        destinationDialogueID: 22
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -53407,521 +53163,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "The poles are heavy and sometimes sharp, the mesh isn\u2019t breathable."
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 22
-        destinationConversationID: 95
-        destinationDialogueID: 23
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 533
-        y: 542
-        width: 160
-        height: 30
-    - id: 23
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 42
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "If it\u2019s hot out and we miss a shipment of water, the young and
-          old residents really struggle. "
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 23
-        destinationConversationID: 95
-        destinationDialogueID: 24
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 538
-        y: 587
-        width: 160
-        height: 30
-    - id: 24
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 42
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "You\u2019d think the officers would go without for the sake of the
-          children..."
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 24
-        destinationConversationID: 95
-        destinationDialogueID: 25
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 539
-        y: 634
-        width: 160
-        height: 30
-    - id: 25
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 42
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 'If anything they drink more. '
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 25
-        destinationConversationID: 95
-        destinationDialogueID: 27
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 544
-        y: 679
-        width: 160
-        height: 30
-    - id: 26
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 42
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "*nods head* I don\u2019t want to comment."
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 26
-        destinationConversationID: 95
-        destinationDialogueID: 28
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 541
-        y: 779
-        width: 160
-        height: 30
-    - id: 27
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: There seems to be some tension between the residents and officers.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 27
-        destinationConversationID: 95
-        destinationDialogueID: 26
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 543
-        y: 723
-        width: 160
-        height: 30
-    - id: 28
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "Well, you needn\u2019t say a word. I\u2019ll see what else I can find
-          out from others."
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 95
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 95
-        originDialogueID: 28
-        destinationConversationID: 95
-        destinationDialogueID: 29
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 544
-        y: 829
-        width: 160
-        height: 30
-    - id: 29
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: "You\u2019ve been incredibly helpful, thank you Olivia."
+        value: "Wow, it\u2019s been a while.  I haven\u2019t thought about it in so
+          long. "
         type: 0
         typeString: 
       - title: Parenthetical
@@ -53957,12 +53200,12 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 546
-        y: 868
+        x: 532
+        y: 565
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 259.45963}
-    canvasZoom: 0.9870008
+    canvasScrollPosition: {x: 0, y: 263}
+    canvasZoom: 1
   syncInfo:
     syncActors: 0
     syncItems: 0
