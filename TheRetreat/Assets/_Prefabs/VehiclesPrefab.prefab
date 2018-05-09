@@ -1998,6 +1998,8 @@ GameObject:
   - component: {fileID: 33780660361010402}
   - component: {fileID: 23647757530168044}
   - component: {fileID: 65434118286804888}
+  - component: {fileID: 65847102010311928}
+  - component: {fileID: 65753764232523986}
   m_Layer: 0
   m_Name: HelicopterB
   m_TagString: Untagged
@@ -21301,8 +21303,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3067089, y: 2.4488866, z: 6.914015}
-  m_Center: {x: 0.0000006556511, y: 1.2221947, z: -1.4743795}
+  m_Size: {x: 1.3067089, y: 2.4488866, z: 4}
+  m_Center: {x: 0.0000006556511, y: 1.2221947, z: 0.02}
 --- !u!65 &65445885898796564
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -21567,6 +21569,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.415532, y: 2.2056875, z: 8.328961}
   m_Center: {x: 0.000001866748, y: 1.422492, z: 0.060167037}
+--- !u!65 &65753764232523986
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356707185036614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.94, z: 1.82}
+  m_Center: {x: 0.0000006556511, y: 1.67, z: -3.93}
 --- !u!65 &65755617537055850
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -21663,6 +21677,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.113443, y: 1.4298834, z: 4.026567}
   m_Center: {x: 0.0000076293945, y: 0.92073315, z: 0.06191969}
+--- !u!65 &65847102010311928
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356707185036614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92, y: 1.22, z: 1.09}
+  m_Center: {x: 0.0000006556511, y: 1.2221947, z: -2.5}
 --- !u!65 &65849081406535708
 BoxCollider:
   m_ObjectHideFlags: 1
