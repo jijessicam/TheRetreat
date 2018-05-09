@@ -318,14 +318,14 @@ namespace PixelCrushers.DialogueSystem
 			Ray ray = new Ray ();
 			ray.origin = this.gameObject.transform.position + new Vector3 (0, 1, 0);
 			ray.direction = this.gameObject.transform.forward;
-			Debug.DrawRay (ray.origin, ray.direction, Color.red);
+			Debug.DrawRay (ray.origin + (this.gameObject.transform.forward * -1), ray.direction * Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)) * 2, Color.red);
 			Debug.Log ("CALLING");
 			Debug.Log (usablesInRange.Count);
 
 			Usable usable = other.GetComponent<Usable> ();
 
 			RaycastHit hit;
-			Physics.SphereCast (ray, 2f, out hit, Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)));
+			Physics.SphereCast (ray.origin + (this.gameObject.transform.forward * -1), 1f, ray.direction, out hit, Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)) * 2, -1, QueryTriggerInteraction.Ignore);
 			Usable hitUsable = null;
 			if (hit.collider != null && hit.collider.gameObject != null) {
 				hitUsable = hit.collider.gameObject.GetComponent<Usable> () as Usable;
