@@ -318,9 +318,9 @@ namespace PixelCrushers.DialogueSystem
 			Ray ray = new Ray ();
 			ray.origin = this.gameObject.transform.position + new Vector3 (0, 1, 0);
 			ray.direction = this.gameObject.transform.forward;
-			Debug.DrawRay (ray.origin + (this.gameObject.transform.forward * -1), ray.direction * Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)) * 2, Color.red);
-			Debug.Log ("CALLING");
-			Debug.Log (usablesInRange.Count);
+//			Debug.DrawRay (ray.origin + (this.gameObject.transform.forward * -1), ray.direction * Vector3.Distance (ray.origin, other.transform.position + new Vector3 (0, 1, 0)) * 2, Color.red);
+//			Debug.Log ("CALLING");
+//			Debug.Log (usablesInRange.Count);
 
 			Usable usable = other.GetComponent<Usable> ();
 
@@ -350,7 +350,7 @@ namespace PixelCrushers.DialogueSystem
 
 		private void CheckTriggerExit (GameObject other)
 		{
-			Debug.Log ("exiting");
+//			Debug.Log ("exiting");
 			Usable usable = other.GetComponent<Usable> ();
 			if (usable != null) {
 				if (usablesInRange.Contains (usable)) {
