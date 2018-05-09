@@ -6330,9 +6330,9 @@ GameObject:
   - component: {fileID: 114099997634891342}
   - component: {fileID: 114080287697892610}
   - component: {fileID: 114126819294237146}
-  - component: {fileID: 114846539242666276}
   - component: {fileID: 114498144462477350}
   - component: {fileID: 136012810488259640}
+  - component: {fileID: 114851662801638468}
   m_Layer: 0
   m_Name: Demitri
   m_TagString: Untagged
@@ -17633,6 +17633,7 @@ GameObject:
   - component: {fileID: 4324027638937562}
   - component: {fileID: 20828363886826534}
   - component: {fileID: 124047860506827692}
+  - component: {fileID: 45799389313085798}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -27057,6 +27058,8 @@ GameObject:
   - component: {fileID: 114673153444646418}
   - component: {fileID: 114789306572562520}
   - component: {fileID: 114500019220024422}
+  - component: {fileID: 114414925387166814}
+  - component: {fileID: 114636107352693344}
   m_Layer: 0
   m_Name: Jacob
   m_TagString: Untagged
@@ -54883,7 +54886,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1366171177353152}
   m_LocalRotation: {x: -0, y: -0.9938449, z: 0, w: -0.11078071}
-  m_LocalPosition: {x: -45.8, y: -25.446976, z: -1.4}
+  m_LocalPosition: {x: -47.1, y: -25.446976, z: 2.7}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4552063569863112}
@@ -63796,6 +63799,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!45 &45799389313085798
+Skybox:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525937344549744}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
 --- !u!54 &54810996730448580
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -64542,7 +64553,7 @@ MonoBehaviour:
   m_JumpPower: 9
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
+  m_MoveSpeedMultiplier: 1.2
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
 --- !u!114 &114018119337033692
@@ -64705,13 +64716,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1203590742294236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   once: 1
-  conversation: Dimitri First Convo
+  conversation: Demitri First Convo
   condition:
     luaConditions: []
     questConditions: []
@@ -65519,6 +65530,34 @@ MonoBehaviour:
   actor: {fileID: 4708646706861472}
   trigger: 32
   stopConversationOnTriggerExit: 0
+--- !u!114 &114414925387166814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814657533398840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  once: 0
+  conversation: Jacob2nd
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  skipIfNoValidEntries: 0
+  exclusive: 0
+  conversant: {fileID: 4949603075157934}
+  useConversationTitlePicker: 1
+  selectedDatabase: {fileID: 0}
+  actor: {fileID: 4708646706861472}
+  trigger: 32
+  stopConversationOnTriggerExit: 0
 --- !u!114 &114423054157408888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65735,7 +65774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   once: 0
-  conversation: Demitri Generic
+  conversation: Demitri pre-Jacob
   condition:
     luaConditions: []
     questConditions: []
@@ -66098,6 +66137,51 @@ MonoBehaviour:
   overrideName: Mitch
   internalName: 
   useLocalizedNameInDatabase: 0
+--- !u!114 &114636107352693344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814657533398840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1195045865, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 2
+  once: 1
+  selectedDatabase: {fileID: 0}
+  onStart: []
+  waitOneFrameOnStart: 0
+  onEnd:
+  - condition:
+      luaConditions: []
+      questConditions: []
+      acceptedTags: []
+      acceptedGameObjects: []
+      luaWizardIndex: 0
+      lastEvaluationValue: 0
+    target: {fileID: 114851662801638468}
+    state: 0
+  - condition:
+      luaConditions: []
+      questConditions: []
+      acceptedTags: []
+      acceptedGameObjects: []
+      luaWizardIndex: 0
+      lastEvaluationValue: 0
+    target: {fileID: 114099997634891342}
+    state: 0
+  - condition:
+      luaConditions: []
+      questConditions: []
+      acceptedTags: []
+      acceptedGameObjects: []
+      luaWizardIndex: 0
+      lastEvaluationValue: 0
+    target: {fileID: 114498144462477350}
+    state: 1
+  waitOneFrameOnEnd: 0
 --- !u!114 &114655996621248652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66110,7 +66194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   once: 0
-  conversation: Filler 1
+  conversation: Roza2
   condition:
     luaConditions: []
     questConditions: []
@@ -66611,42 +66695,34 @@ MonoBehaviour:
   overrideName: Teresa
   internalName: 
   useLocalizedNameInDatabase: 0
---- !u!114 &114846539242666276
+--- !u!114 &114851662801638468
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1203590742294236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1195045865, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: 2
-  once: 1
+  once: 0
+  conversation: Demitri Generic
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  skipIfNoValidEntries: 0
+  exclusive: 0
+  conversant: {fileID: 4940165251583340}
+  useConversationTitlePicker: 1
   selectedDatabase: {fileID: 0}
-  onStart: []
-  waitOneFrameOnStart: 1
-  onEnd:
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: 0
-      lastEvaluationValue: 0
-    target: {fileID: 114099997634891342}
-    state: 1
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: 0
-      lastEvaluationValue: 0
-    target: {fileID: 114498144462477350}
-    state: 0
-  waitOneFrameOnEnd: 0
+  actor: {fileID: 4708646706861472}
+  trigger: 32
+  stopConversationOnTriggerExit: 0
 --- !u!114 &114851800672935412
 MonoBehaviour:
   m_ObjectHideFlags: 1
