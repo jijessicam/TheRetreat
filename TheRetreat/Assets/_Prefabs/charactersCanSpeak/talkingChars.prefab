@@ -65715,7 +65715,7 @@ MonoBehaviour:
   m_Script: {fileID: 567319595, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  once: 1
+  once: 0
   conversation: Demitri Generic
   condition:
     luaConditions: []
