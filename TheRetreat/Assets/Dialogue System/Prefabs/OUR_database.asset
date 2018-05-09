@@ -1961,6 +1961,26 @@ MonoBehaviour:
       typeString: 
     portrait: {fileID: 2800000, guid: 7068d5cd690fe70468d8dc57fbaaad98, type: 3}
     alternatePortraits: []
+  - id: 88
+    fields:
+    - title: Name
+      value: Andleton
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    alternatePortraits: []
   items:
   - id: 1
     fields:
@@ -10900,7 +10920,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 51
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
