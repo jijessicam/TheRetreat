@@ -448,7 +448,7 @@ namespace PixelCrushers.DialogueSystem
 			indicatorAboveHead.SetActive (isEnabled);
 
 			RectTransform rt = indicatorAboveHead.GetComponent<RectTransform> ();
-			rt.anchoredPosition3D = new Vector3 (0f, 3.5f, 0f);
+			rt.anchoredPosition3D = new Vector3 (0f, 3.3f, 0f);
 
 		}
 		/* *~*~*~*~*~*~*~*~*~*~* *~*~*~**~*~*~*~*~*~*~*~*~*~*~ */
